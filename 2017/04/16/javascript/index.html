@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>guopengsong</title>
+    <title>javascript�ʼ� | guopengsong</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="郭鹏松">
     
-    <meta name="description" content="title: javascriptdate: 2017-04-16 19:06:21tags:javascript—">
+    <meta name="description" content="###css�����뵽ҳ���ļ��ַ�ʽ1������ʽ��2����Ƕʽ����cssд��style��ǩ���棬����head���棩��3������ʽ��ֻ�ǽ���Ƕʽ�е�css��ʽ����һ��������css�ļ��У�ͨ��link��ǩ���룩��4������ʽ��">
     
     
     
@@ -72,7 +72,7 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2017/04/16/javascript/" title="" itemprop="url"></a>
+      <a href="/2017/04/16/javascript/" title="javascript�ʼ�" itemprop="url">javascript�ʼ�</a>
   </h1>
   <p class="article-author">By
     
@@ -80,7 +80,7 @@
     </p>
   <p class="article-time">
     <time datetime="2017-04-16T11:06:21.230Z" itemprop="datePublished">2017-04-16</time>
-    更新日期:<time datetime="2017-04-16T11:08:20.950Z" itemprop="dateModified">2017-04-16</time>
+    更新日期:<time datetime="2017-04-16T11:20:40.891Z" itemprop="dateModified">2017-04-16</time>
     
   </p>
 </header>
@@ -92,8 +92,531 @@
 		
 		</div>
 		
-		<hr>
-<p>title: javascript<br>date: 2017-04-16 19:06:21<br>tags:<br>javascript—</p>
+		<p>###css�����뵽ҳ���ļ��ַ�ʽ<br>1������ʽ��<br>2����Ƕʽ����cssд��style��ǩ���棬����head���棩��<br>3������ʽ��ֻ�ǽ���Ƕʽ�е�css��ʽ����һ��������css�ļ��У�ͨ��link��ǩ���룩��<br>4������ʽ���﷨@import “css/index.css”����</p>
+<p>###js���뵽ҳ���еļ��ַ�ʽ<br>1���������루���Ƽ�����ȫ���ܵͣ���ͨ������̨�޸�<br>����ʾ��<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div onclick="alert('1')"&gt;&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>2����Ƕʽ����jsд��script��ǩ���棩��<br>3������ʽ����js�ļ�����һ��������JavaScript�ļ��ڣ�ͨ��script��ǩ��src�������룩��<br><code>������ʽ��script��ǩ�м䲻����дjs���룬д��Ҳ����ִ��</code><br>����ʾ��<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;script type="text/javascript" src="js/index.js"&gt;</div><div class="line">	console.log(1)//�����Ĵ��벻��ִ��</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p><strong>�ܽ�</strong><br>Ϊʲôcss����head���棿<br>��Ϊhtml�Ǵ��ϵ��¼��أ����ȼ��غ���ʽ��Ȼ�����ؽṹ����ǿ�û����飻<br>Ϊʲô��js����body���棿<br>��Ϊhtml�Ǵ��ϵ��¼��أ�jsͨ���ǻ�ȡhtml��ǩȻ�����趯̬Ч���ģ�������Ҫ�ȼ���html��ǩ�ټ���js</p>
+<p>###js�г��õļ���������ʽ�Ϳ���̨����<br><strong>������ʽ</strong><br>1��alert(“��������”)��ҳ���е���һ���򣬰�Ҫ����������<code>��ת�����ַ���������</code><br>2��console.log(“��������”)�ڿ���̨console���������ݣ���õ�������ʽ<br>3��console.dir�ڿ���̨����һ����������ϸ��Ϣ<br>4��console.table��һ��json���ݰ��ձ����������������鿴�ṹ��������<br>5��document.write(“��������”)��ҳ����������ʾ���ǵ����ݣ�������ҳ��������һ������<br>6��innerHTML(“��������”)��innerText(“��������”)��ָ��Ԫ�ض�̬��������<br>7��confirm()��������ȷ�ϵ����㣬���û�ѡ��ȷ������������true���û�ѡ��ȡ������������false������ͨ���������ص�ֵ���ж�Ӧ�Ĳ���<br><img src="./confirm.png" alt="Alt text"></p>
+<p><strong>innerHTML��innerText������</strong></p>
+<ul>
+<li>firefox��������֧��innerText</li>
+<li>innerHTML�������������ֻ�������html��ǩ��innerText����ʶ��html��ǩ���ѱ�ǩҲ�����������ӽ�ȥ<br><strong>����̨����</strong></li>
+<li>Elements������ҳ���е�����Ԫ�ض����������棬���Ǿ������������������ǵ���ʽ�������������а�װһ��firebug������Ҳ���Ե�����ʽ����</li>
+<li>Console��ҳ�����ڿ���̨������������������</li>
+<li>Network��������������������Դ�ļ���HTML��CSS��JS��ͼƬ�����ݽӿڣ������Ҹ�������ÿһ���ļ��������ɵ�ʱ�䣬��Ŀ��ͨ��Network��ʱ���ϳ��Ľ����Ż���</li>
+<li>Socuces��������Ŀ�е�HTML��CSS��JS���е�Դ�룬����վ�����������ҵ�����Դ�룬ѹ������Դ���������½Ǵ����ſ��Խ�ѹ</li>
+<li>Resources������Դ����˼�����ش洢���ݣ�cookie��localstorage���������������鿴<br>###js�����ɺ������淶<br>������(window����������)-&gt;�ĵ�(document�ĵ�����)-&gt;html-&gt;head/body<br>js:javaScript��һ���������Ľű���������<br><strong>���ɲ���</strong><br>1��ECMAScript��4��5��������js�����������淶���������������͡������﷨�����������������ĵĶ���<br>2��DOM document object model �ĵ�����ģ�ͣ��ṩ�����й����ĵ�������Ԫ�ز�����ʽ<br>3��BOM browser object model ����������ģ�ͣ��ṩ�����й����������Ĳ�����ʽ<br><strong>�����淶</strong><br>1��js���ϸ����ִ�Сд<br>2��ʹ���շ���������</li>
+<li>����ĸСд��������ÿ���������ĵ��ʵ�����ĸ��д  ���磺personInformation</li>
+<li><p>����ʹ�����֡���ĸ���»��ߡ�$<code>�����ֲ�����Ϊ����ĸ���»��߿�ͷͨ��������������$��ͷͨ����Ϊjquery������</code><br>��<br>3������ʹ�ùؼ��ֺͱ�����<br>�ؼ��֣���js����������������<br>|break      |    case | catch|continue|default  |<br>| :——–: | :——–:| :–: | :–: | :–: |<br>| delete  | do |  else   |finally|for|<br>|function    |if|in    |instanceof|    new|<br>|return    |switch|this    |throw    |try|<br>|typeof    |var    |void    |while|with|<br>�����֣�δ���п��ܳ�Ϊ�ؼ��ֵ�<br>|abstract    |    boolean    | byte    |char    |class|<br>| :——–: | :——–:| :–: | :–: | :–: |<br>|const    |debugger    |double|    enum|    export|<br>|extends|    final|    float|    goto    |implements|<br>|import|    int    |interface|    long|    native|<br>|package|    private|    protected|    public|    short|<br>|static    |super    |synchronized|    throws    |transient|<br>|volatile            |<br>###js�еı��������������Լ���������֮����ת��<br>������һ�������ĸ�������������洢ֵ�ʹ���ֵ��<br>js�ж���������var������ʾ��</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div></pre></td><td class="code"><pre><div class="line">var name=<span class="string">"����"</span>;</div><div class="line">``` </div><div class="line">`js�еı�������ɢ���͵ģ����Դ洢�κ��������͵�����`</div><div class="line">**`js�е��������ͷ�Ϊ�����������ͺ�������������`**</div><div class="line">�����������ͣ�</div><div class="line">���֣�number�����ַ�����string��������ֵ��boolean����null��undefined</div><div class="line">�����������ͣ�</div><div class="line">�����������ͣ�object���������������ͣ�function��</div><div class="line"><span class="comment">####��������number</span></div><div class="line">number�������Ͱ�����������������С����<span class="number">0</span>��NaN��<span class="keyword">not</span> a number����һ����Ч���֣���������number�������ͣ�</div><div class="line">`=`�Ǹ�ֵ</div><div class="line">`==`���ж��Ƿ����ȣ�������������ת��</div><div class="line">`===`���ж��Ƿ��������ȣ���������Ҳ������ͬ</div><div class="line">`NaN==NaN��false����Ϊ������Ч���֣�û�취���Ƚ�`</div><div class="line">isNaN()����һ��ֵ�ǲ���NaN����NaN����true������Ч���ַ���false�����������Ĳ���number���͵ģ��ͻ��Ƚ����������͵�ת����Ȼ���ٽ��бȽ�</div><div class="line"><span class="comment">####��������boolean</span></div><div class="line">`��`��ȡ������˼�����Ƚ�ֵת���ɲ������͵���ȡ��</div><div class="line">`����`�ǽ�������������ת���ɲ������ͣ��൱��Boolean();</div><div class="line"><span class="comment">####��������object</span></div><div class="line">js�еĶ�������������������������ֵ���ɣ�Ҳ���Ǽ�ֵ�ԣ�������������ֵ�����������������������ģ������������ظ���</div><div class="line">����ͨ��`obj.name`��`obj[<span class="string">"name"</span>]`�����ַ�ʽ��������ֵ�����������������֣�ֻ��ͨ��`obj[<span class="string">"1"</span>]`����ȡ����ֵ</div><div class="line">``` python</div><div class="line">var obj=&#123;</div><div class="line">		<span class="string">"name"</span>:<span class="string">"����"</span>,</div><div class="line">		<span class="string">"age"</span>:<span class="string">"18"</span>��</div><div class="line">		<span class="string">"height"</span>:<span class="string">"180cm"</span>,</div><div class="line">		<span class="string">"weight"</span>:<span class="string">"80kg"</span></div><div class="line">	&#125;//����������������ʽ</div><div class="line">var obj=new Object();//ʵ��������ʽ</div><div class="line">obj.name=<span class="string">"����"</span>;</div><div class="line">obj[<span class="string">"name"</span>]=<span class="string">"����"</span>//�����ַ������������Ӻ��޸Ķ���������ֵ;</div><div class="line">console.log(obj.name);</div><div class="line">console.log(obj[<span class="string">"name"</span>]);//�����ַ����ǻ�ȡ����ֵ,���������������ڣ����ؽ�����undefined</div><div class="line">//��ɾ��</div><div class="line">obj.name=null;</div><div class="line">//��ɾ��</div><div class="line">delete obj.name;</div><div class="line">``` </div><div class="line">�����������ͻ����Ծ���ϸ�֣����������ࣨObject���������ࣨArray���������ࣨRegexp����ʱ���ࣨDate����Math��ѧ���������ȶ�Ӧ��ʵ��</div><div class="line">**js�ж������ࡢʵ��������**</div><div class="line">�����Ƿ�ָ��js�������Զ��������ǶԶ����ľ���ϸ�֣�ʵ�������е�һ�����������</div><div class="line"><span class="comment">####��������function</span></div><div class="line">����function�Ĳ��裺�ٿ���һ���µĶ��ڴ��ڰѺ������е�js���뵱���ַ��������ڴ��ռ�ȥ���ٰѶ��ڴ���ַ��������</div><div class="line">``` python</div><div class="line">	function fn()&#123;</div><div class="line">        //�������Ǻ�����</div><div class="line">    &#125;</div><div class="line">``` </div><div class="line">js��function��һ���ر��������ã���װ����ʵ��һ�����ܵĴ����ķ�װ���Ժ���ʵ���������ܴ���û�б�Ҫ����д�ˣ�ֻҪִ����������������;</div><div class="line">ͨ�����ݲ����Ĳ�ͬ��ʵ�ֲ�ͬ�Ĺ��ܽ���������`��̬`��</div><div class="line">�����β�û��ֵ��Ĭ��ֵ��undefined��</div><div class="line">arguments��һ�������飨��������Ϊ��������length���ԣ������е������鶼�Ƕ����������ͣ��Ǻ����ڲ����ղ����Ļ��ƣ������Ƿ�д�β�Ҳ�����Ƿ񴫵ݲ�����argumentsһֱ���ڣ�</div><div class="line">arguments.callee������ǰ����������</div><div class="line">arguments�л�ȡ����ĳһ��ֻ����arguments[����]��������arguments.item();</div><div class="line">����arguments�������������ͣ�����ʾ��</div><div class="line">``` python</div><div class="line">	function sum()&#123;</div><div class="line">        var total=<span class="number">0</span>;</div><div class="line">        <span class="keyword">for</span>(var i=<span class="number">0</span>;i&lt;arguments.length;i++)&#123;</div><div class="line">            var cur=arguments[i];</div><div class="line">            cur=Number(cur);</div><div class="line">            <span class="keyword">if</span>(!isNaN(cur))&#123;</div><div class="line">                total+=cur;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> total;//��������ʲôֱ���ں���������<span class="keyword">return</span>�Ϳ�����</div><div class="line">    &#125;</div><div class="line">    var total=sum(<span class="number">1</span>,<span class="number">2</span>,<span class="string">"3"</span>,<span class="string">"a"</span>)//�Ѻ���ִ�����ɵ����巵��ֵ��ֵ����������total����</div><div class="line">    console.log(total);</div><div class="line">``` </div><div class="line">**�հ�**</div><div class="line">����ִ�е�ʱ�����γ�һ��˽�е������������������ı������������ĸ��ţ����ǰ����ֻ��ƽ����հ�</div><div class="line">**�����е�<span class="keyword">return</span>�Ļ���**</div><div class="line">����������ûд<span class="keyword">return</span>Ĭ�Ϸ���ֵ��undefined</div><div class="line">��������������ʲôֱ���ں���������<span class="keyword">return</span>�Ϳ�����</div><div class="line">������<span class="keyword">return</span>�����Ĵ��벻��ִ�У�Ӧ���ڿ��ƺ����д���ִ�е�ָ��λ�þͽ���</div><div class="line">**��������**</div><div class="line">��������һ�������������ٺ�������ʽ�������������Ķ��岿�ֵ���ֵ��ֵ��һ����������һ��Ԫ�ص��¼���</div><div class="line">	����var fn=function()&#123;console.log(<span class="string">"����һ����������ʽ"</span>)&#125;�����ǰ����¼��������߶�ʱ�����Ǻ�������ʽ��</div><div class="line">	����ִ�к���</div><div class="line">	�﷨</div><div class="line">``` python</div><div class="line">//���¶�����ִ�к���</div><div class="line">;(function()&#123;&#125;)();</div><div class="line">    </div><div class="line">~function()&#123;&#125;();</div><div class="line"></div><div class="line">!function()&#123;&#125;();</div><div class="line"></div><div class="line">+function()&#123;&#125;();</div><div class="line"></div><div class="line">-function()&#123;&#125;();</div><div class="line">``` </div><div class="line"><span class="comment">####��������֮����ת��</span></div><div class="line">number�е�ǿ����������ת����Number()��</div><div class="line">``` python</div><div class="line">Number()//ǿ�ư�������������ת����number���ͣ��������ַ���,�ַ����б��붼�����ֲſ���ת����ֻҪ��һ��������Ч���־ͻ᷵��NaN</div><div class="line">Number(<span class="string">"123"</span>)//����<span class="number">123</span></div><div class="line">Number(<span class="string">"12px"</span>)//����NaN</div><div class="line">Number(<span class="string">"12.5"</span>)//����<span class="number">12.5</span></div><div class="line">Number(<span class="string">""</span>)//����<span class="number">0</span></div><div class="line">``` </div><div class="line">number�з�ǿ����������ת��parseInt��parseFloat</div><div class="line">``` python</div><div class="line">parseInt()//��������һ�����ַ����ң��������ֵ�ת������Ч���֣���;����������һ������Ч���֣��Ͳ��ڼ��������ˣ�������һ��������Ч���ַ���NaN</div><div class="line">parseInt(<span class="string">"12px"</span>)//����ֵ��<span class="number">12</span></div><div class="line">parseInt(<span class="string">"12.5px"</span>)//����ֵ��<span class="number">12</span></div><div class="line">parseInt(<span class="string">"xiaoguo000"</span>)//����ֵ��NaN</div><div class="line">parseFloat()//��parseIntһ����������ʶ��С����</div><div class="line">parseInt(<span class="string">"12.5px"</span>)//����ֵ��<span class="number">12.5</span></div><div class="line">``` </div><div class="line">**�������͵�ת������**</div><div class="line"><span class="number">1</span>������ֻ��һ����ֵ���ж����٣���ѭ��ֻ��<span class="number">0</span>��NaN��<span class="string">""</span>��null��undefined��<span class="number">5</span>���Ǽ٣����඼����;���±�</div><div class="line">��������������������ʱ����ת��</div><div class="line">|����	| ����	|ʾ��|</div><div class="line">| :--------: | :--------:| :--: |</div><div class="line">|object	|����true| 	 alert(!![])|</div><div class="line">|number|	ֻ��<span class="number">0</span>��NaN��false|	 alert(!!<span class="number">0</span>);|</div><div class="line">|string|	ֻ�п��ַ�����false�����ǿո��ַ�����|	 alert(!!<span class="string">""</span>);|</div><div class="line">|function|	����ture	 |</div><div class="line">|null,undefined	|����false|	</div><div class="line"><span class="number">2</span>����ͬ��������֮���Ƚϵ�ʱ����������֮����ת��</div><div class="line">|����	|    ����	| ����	|����˵��|</div><div class="line">| :--------: | :--------:| :--: | :--: |</div><div class="line">| ����	| ����	|  �Ƚ��ǲ���ͬһ���ڴ���ַ	 ||</div><div class="line">|����	|�ַ���|������ת��Ϊ�ַ�����Ȼ�����Ƚ�|���ö�����toString������[]ת��Ϊ�ַ�����<span class="string">""</span>,&#123;&#125;ת�����ַ�����[object Object]|</div><div class="line">|����	|��������|���߶�Ҫ��תΪ���֣�false��<span class="number">0</span>��true��<span class="number">1</span>�����Ƕ�����������ʽ����toString������Ȼ����Number()|alert([]==false);alert([]==<span class="number">0</span>)��alert([<span class="number">1</span>]==<span class="number">1</span>);alert([<span class="number">1</span>]==true)��alert([<span class="number">2</span>]==true)||</div><div class="line">|����	|����	|����ҪתΪ���֣��ٽ��бȽ�(��������ʽ����toString����ת��Ϊ�ַ�����Ȼ���ٰ������ַ����ֻ�Ϊ���֣��൱�ڰ������ַ����ŵ�Number����������)||</div><div class="line">|����	|����|�ǽ��е����ֵıȽ�||</div><div class="line">|����	|�ַ���	|���ַ���ת��Ϊ���֣��ٱȽ�	||</div><div class="line">|����	|�ַ���|�����߶�Ҫת��Ϊ�����ٽ��бȽ�||</div><div class="line">|null	|undefined	|true||</div><div class="line">|null,undefined	|����������	|null��undefined���������ͱȽ϶���false(����������ûtoString����)|alert(null==false)��alert(null==<span class="number">0</span>)��alert(null==<span class="string">""</span>);|</div><div class="line"><span class="comment">###�������͵����ֺ��������͵ļ���</span></div><div class="line"><span class="comment">####�����������ͺ������������͵ı�������</span></div><div class="line">��������������ֱ�Ӳ���ֵ�������������Ͳ������ǶԿռ������õ�ַ���ȶ���һ��������Ȼ�󿪱�һ���ڴ棬��������������ֵ�����������ռ䣬Ȼ����������ַ ����������</div><div class="line"><span class="comment">####js�м����������͵ķ�ʽ</span></div><div class="line">- typeof������   `����ֵ��һ���ַ�����������<span class="string">"number"</span>��<span class="string">"string"</span>��<span class="string">"boolean"</span>��<span class="string">"undefined"</span>��<span class="string">"object"</span>��<span class="string">"function"</span>��typeof null�Ľ�����<span class="string">"object"</span>`typeof�о����ԣ����ܾ�������object�µ�ϸ�ֵ������������顢���򣬼����ķ��ؽ�������<span class="string">"object"</span>;</div><div class="line">- instanceof������</div><div class="line">- constructor</div><div class="line">- Object.prototype.toString.call()</div><div class="line"><span class="comment">###js�е������ж�����</span></div><div class="line">- **<span class="keyword">if</span> <span class="keyword">else</span>**  �ܽ������е��ж�</div><div class="line">�﷨��</div><div class="line">``` python</div><div class="line">	<span class="keyword">if</span>(����<span class="number">1</span>)&#123;</div><div class="line">        ����<span class="number">1</span>����ʱִ�еĴ���</div><div class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(����<span class="number">2</span>)&#123;</div><div class="line">        ����<span class="number">1</span>����ʱִ�еĴ���</div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">        ����������������ʱִ�еĴ���</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>��Ԫ������</strong>   Ӧ���ڼ򵥵�if else����<br>�﷨��</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var num=1;</div><div class="line">   num&gt;=0?console.log("������0"):console.log("����");</div><div class="line">   num&gt;=0?(console.log("����������"),console.log("Ҳ������0")):console.log("����");</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><strong>��Ԫ��������������ִ�ж���������ʱ���������Ű�������ÿ������֮���ö��Ÿ���</strong></p>
+<ul>
+<li><strong>switch case</strong>  Ӧ���ڲ�ֵͬ�µĲ�ͬ����<br><code>ÿһ��case�����¶�Ҫ��break��default����Ҫ��break,��������break�����ܺ����Ĵ����Ƿ���������ִ�У�ÿһ��case�������൱��===�Ƚϣ�ע�����������Ƿ���ͬ</code><br>�﷨��<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">var num=<span class="number">10</span>;</div><div class="line">   switch (num)&#123;</div><div class="line">       case <span class="number">0</span>:</div><div class="line">           console.log(<span class="number">0</span>);</div><div class="line">           <span class="keyword">break</span>;//ÿһ��case�����¶�Ҫ��<span class="keyword">break</span>,��������<span class="keyword">break</span>�����ܺ����Ĵ����Ƿ���������ִ��</div><div class="line">       case <span class="number">10</span>:</div><div class="line">           console.log(<span class="number">10</span>);</div><div class="line">           <span class="keyword">break</span>;</div><div class="line">       case <span class="number">100</span>:</div><div class="line">           console.log(<span class="number">100</span>);</div><div class="line">           <span class="keyword">break</span>;</div><div class="line">       default :</div><div class="line">           console.log(<span class="string">"����"</span>);</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>###js�е��жϵ�Ӧ�ã����صƣ�<br>document.getElementById��document�������ģ�context �޶���ȡԪ�صķ�Χ��ͨ��id��ȡԪ�ص�������ֻ����document<br>Ԫ��.style.backgroundColor��ȡ����<code>������ʽ</code>�ϵı���ɫ<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">var oBody=document.getElementById(<span class="string">"oBody"</span>);</div><div class="line">    oBody.onclick=function()&#123;</div><div class="line">        var bg=oBody.style.backgroundColor;</div><div class="line">        switch (bg)&#123;</div><div class="line">            case <span class="string">"white"</span>:</div><div class="line">                oBody.style.backgroundColor=<span class="string">"black"</span>;</div><div class="line">                <span class="keyword">break</span>;</div><div class="line">            default :</div><div class="line">                oBody.style.backgroundColor=<span class="string">"white"</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
+<p>###js�е�����ѭ��</p>
+<ul>
+<li><p>forѭ��<br>�Ĳ�����1�����ó�ʼֵ  var i=0;</p>
+<pre><code>2������ѭ������ i&lt;5;
+3��ִ��ѭ�����е�����
+4��ѭ����ִ��������ִ���ۼӲ��� i++;
+</code></pre><p><code>break</code>:��ѭ�����г���break����������ѭ�����ۼӲ�������ִ�У�<br><code>continue</code>����ѭ�����г���continue��������ǰ��һ�ֵ�ѭ��������һ��ѭ�����ۼӲ�������ִ��<br>��ѭ�����������������ؼ��֣�ѭ�����йؼ��ֺ����Ĵ����Ͳ���ִ����<br>�﷨��</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(var i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)&#123;</div><div class="line">       console.log(i)</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>for inѭ��</p>
+</li>
+</ul>
+<p><code>for inѭ��ֻ�ܱ����Զ��������Ժͷ���������˽�еĺ�ԭ�����Ϲ��еģ�</code><br><code>propertyIsEnumerable</code>:�ж�˽�е����Ժͷ����ǲ��ǿ�ö�ٵģ���hasOwnProperty<br>ͨ������ѭ��һ�������е�������������ֵ�ģ��������ж��ټ�ֵ�Ծ�ѭ�����Σ�<br>��for inѭ����ֻ��<code>obj[key]</code>��ô��������ֵ�������Դ����ķ�ʽ���õ�undefined����Ϊobj��û��key�������ԣ�<br>������������������Ϊ������������ѭ�����������������մ�С������˳�򣩣�ʣ�µ���������������д��˳��<br>�﷨��<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">var obj=&#123;</div><div class="line">       name:<span class="string">"����"</span>,</div><div class="line">       age:<span class="number">18</span>,</div><div class="line">       height:<span class="number">180</span>,</div><div class="line">       weight:<span class="number">80</span>,</div><div class="line">       birthday:<span class="number">19990206</span></div><div class="line">   &#125;;</div><div class="line">   <span class="keyword">for</span>(var key <span class="keyword">in</span> obj)&#123;</div><div class="line">       console.log(key+obj[key]);//��<span class="keyword">for</span> <span class="keyword">in</span>ѭ����ֻ����ô��������ֵ</div><div class="line">   &#125;</div></pre></td></tr></table></figure></p>
+<ul>
+<li>whileѭ��<br>�﷨��<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var i=<span class="number">0</span>;</div><div class="line">   <span class="keyword">while</span>(i&lt;<span class="number">5</span>)&#123;</div><div class="line">       i++;</div><div class="line">   &#125;</div><div class="line">   console.log(i);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>###js�и��б�ɫ��ԭ��<br>���б�ɫ��ԭ���ǲ������е�li������ͬ�����Ӳ�ͬ�������ﵽ���б�ɫ��Ч����<br>����li��������oLi[0].<code>className</code>=’c1’;<br>i%2����˼��i����2ȡ������<br>����js�������껬����ɫ��Ч��ʱ�����Զ������Եķ�ʽ�����껮��ʱ����ԭ���������ı������������뿪ʱ�ָ�ԭ��������</p>
+<p>###ѡ�<br>˼·�������껮��ĳһ��li����ʱ����������li��div��û��select��ʽ��Ȼ�������껬����li����Ӧ��div��select��ʽ�Ϳ�����<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">//�Զ������Եķ�ʽ</div><div class="line">	var oTab=document.getElementById(<span class="string">"tab"</span>);</div><div class="line">    var oLis=oTab.getElementsByTagName(<span class="string">"li"</span>);</div><div class="line">    var oDivs=oTab.getElementsByTagName(<span class="string">"div"</span>);</div><div class="line">    function tabChange(nIndex)&#123;</div><div class="line">        <span class="keyword">for</span>(var i=<span class="number">0</span>;i&lt;oLis.length;i++)&#123;</div><div class="line">            oLis[i].className=<span class="string">""</span>;</div><div class="line">            oDivs[i].className=<span class="string">""</span>;</div><div class="line">        &#125;</div><div class="line">        oLis[nIndex].className=<span class="string">"select"</span>;</div><div class="line">        oDivs[nIndex].className=<span class="string">"select"</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">for</span>(var i=<span class="number">0</span>;i&lt;oLis.length;i++)&#123;</div><div class="line">        oLis[i].index=i;//�����������Զ�������</div><div class="line">        oLis[i].onmouseover=function()&#123;</div><div class="line">            tabChange(this.index);</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">//�ϲ��򻯺����Զ������Է�ʽ����Ŀ�л�����ôд</div><div class="line">	var oTab=document.getElementById(<span class="string">"tab"</span>);</div><div class="line">    var oLis=oTab.getElementsByTagName(<span class="string">"li"</span>);</div><div class="line">    var oDivs=oTab.getElementsByTagName(<span class="string">"div"</span>);</div><div class="line">    <span class="keyword">for</span>(var i=<span class="number">0</span>;i&lt;oLis.length;i++)&#123;</div><div class="line">        oLis[i].index=i;</div><div class="line">        oLis[i].onmouseover=function()&#123;</div><div class="line">            <span class="keyword">for</span>(var j=<span class="number">0</span>;j&lt;oLis.length;j++)&#123;</div><div class="line">                oLis[j].className=<span class="string">""</span>;</div><div class="line">                oDivs[j].className=<span class="string">""</span>;</div><div class="line">            &#125;</div><div class="line">            this.className=<span class="string">"select"</span>;</div><div class="line">            oDivs[this.index].className=<span class="string">"select"</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">//�ñհ��ķ�ʽ</div><div class="line">	var oTab=document.getElementById(<span class="string">"tab"</span>);</div><div class="line">    var oLis=oTab.getElementsByTagName(<span class="string">"li"</span>);</div><div class="line">    var oDivs=oTab.getElementsByTagName(<span class="string">"div"</span>);</div><div class="line">    <span class="keyword">for</span>(var i=<span class="number">0</span>;i&lt;oLis.length;i++)&#123;</div><div class="line">        (function()&#123;</div><div class="line">            oLis[i].onmouseover=function()&#123;</div><div class="line">                <span class="keyword">for</span>(var j=<span class="number">0</span>;j&lt;oLis.length;j++)&#123;</div><div class="line">                    oLis[j].className=<span class="string">""</span>;</div><div class="line">                    oDivs[j].className=<span class="string">""</span>;</div><div class="line">                &#125;</div><div class="line">                oLis[i].className=<span class="string">"select"</span>;</div><div class="line">                oDivs[i].className=<span class="string">"select"</span>;</div><div class="line">            &#125;</div><div class="line">        &#125;)(i);</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p>###�žų˷���<br><strong>�ַ���ƴ�ӵĹ���</strong></p>
+<ul>
+<li>������˫���ţ������ͱ����ǵ����ţ������ǵ����ţ������ͱ�����˫����</li>
+<li>����һ���ַ�������Ҫ����һ������������������˫���Ż��ǵ����ţ�������˫���ţ���ôֱ��”+������+”�������ǵ����ţ���ô’+������+’<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">var oTab=document.getElementById(<span class="string">"tab"</span>);</div><div class="line">var str=<span class="string">""</span>;</div><div class="line">str+=<span class="string">"&lt;ul&gt;"</span>;</div><div class="line"><span class="keyword">for</span>(var i=<span class="number">1</span>;i&lt;=<span class="number">9</span>;i++)&#123;</div><div class="line">    var val;</div><div class="line">    switch (i%<span class="number">3</span>)&#123;</div><div class="line">        case <span class="number">1</span>:</div><div class="line">            val=<span class="string">'c1'</span>;</div><div class="line">            <span class="keyword">break</span>;</div><div class="line">        case <span class="number">2</span>:</div><div class="line">            val=<span class="string">'c2'</span>;</div><div class="line">            <span class="keyword">break</span>;</div><div class="line">        default :</div><div class="line">            val=<span class="string">'c3'</span>;</div><div class="line">    &#125;</div><div class="line">    str+=<span class="string">"&lt;li class='"</span>+val+<span class="string">"'&gt;"</span>;</div><div class="line">        <span class="keyword">for</span>(var j=<span class="number">1</span>;j&lt;=i;j++)&#123;</div><div class="line">            str+=<span class="string">"&lt;span&gt;"</span>;</div><div class="line">                str+=j+<span class="string">"*"</span>+i+<span class="string">"="</span>+j*i;</div><div class="line">            str+=<span class="string">"&lt;/span&gt;"</span>;</div><div class="line">        &#125;</div><div class="line">    str+=<span class="string">"&lt;/li&gt;"</span>;</div><div class="line">&#125;</div><div class="line">str+=<span class="string">"&lt;/ul&gt;"</span>;</div><div class="line">oTab.innerHTML=str;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>###�����������ĳ��÷���<br>�������ɶ��������ɵģ�ÿһ��֮���ö��Ÿ���������ÿһ���洢��ֵ�������κ���������<br>��������ʲô�õģ����ݵĲ�����ʲô������ֵ��ʲô��ԭ�����Ƿ��ı�<br><strong>��һ�����������ӡ�ɾ�����޸�</strong></p>
+<ul>
+<li><code>push</code>����������ĩβ���������ݣ��������Ӻ��������ĳ��ȣ�ԭ�������ı�</li>
+<li><code>unshift</code>���������Ŀ�ͷ���������ݣ��������Ӻ��������ĳ��ȣ�ԭ�������ı�</li>
+<li><code>splice(n,m,x)</code>�����������м����������ݣ�,��ɾ�������ݵ��������鷵�أ�ԭ�������ı�<br>������n��ʼɾ��m�����ݣ��������ӵ����ݷ�������n��<code>ǰ��</code><br><code>splice(n,m)</code>������n������n����ʼɾ��m������,��ɾ�������ݵ��������鷵�أ�ԭ�������ı�</li>
+<li><code>pop</code>��ɾ����������һ����ر�ɾ������һ�ԭ�������ı�</li>
+<li><code>shift</code>��ɾ��������һ����ر�ɾ������һ�ԭ�������ı�<br><strong>�ڶ��������Ĳ�ѯ�͸���</strong></li>
+<li><code>slice(n,m)</code>������n������n����ʼ�ҵ�����m��������m���������ҵ���������Ϊһ���µ����鷵�أ�ԭ�����鲻��<br><code>slice(n)</code>������n������n����ʼ����ȡ��������ĩβ<br><code>slice()</code>û�в���������0��ʼ��ȡ��ĩβ���൱��<code>slice(0)</code></li>
+<li><code>concat</code>ʵ��������ƴ�ӣ�����ֵ��ƴ�Ӻ���������,ԭ���鲻��;�÷�ary1.concat(ary2)<br><strong>�����齫����ת�����ַ���</strong></li>
+<li><code>toString</code>�������е�ÿһ���ó����ö��Ÿ��������ظ��������ַ�����ԭ�����鲻��</li>
+<li><code>join(�ָ���)</code>�������е�ÿһ���ó�����ָ���ָ������������ظ��������ַ�����ԭ�����鲻��<br><code>eval()</code>�ǽ��ַ�������js����ʽִ�У����������и�������<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">eval(ary.join(<span class="string">"+"</span>))</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><strong>��������������������</strong></p>
+<ul>
+<li><code>reverse</code>�����鵹�������У��������к��������飬ԭ�������ı�</li>
+<li><code>sort</code>���������򣬿���ʵ���ɴ���С��Ҳ����ʵ����С����������ԭ�������ı�<br>sort��ѭ����ð��������˼��<br>ֱ��дary.sort()ֻ�ܴ���10���ڵ����򣬴���10���ϵ���Ҫ���ݲ���������������һ������<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ary.sort(function(a,b)&#123;<span class="keyword">return</span> a-b;&#125;)//���Ǵ�С��������</div><div class="line">ary.sort(function(a,b)&#123;<span class="keyword">return</span> b-a;&#125;)//���ǴӴ���С����</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><strong>�����鳣�õ������ݵķ���</strong></p>
+<ul>
+<li><code>indexOf</code>�ж������Ƿ�����ĳһ�������������������������-1��</li>
+<li><code>forEach</code>ѭ��������ÿһ�� <code>IE6-8������</code></li>
+<li><code>map</code>ѭ��������ÿһ�map��Ҫ��һ������function�������е�ÿһ����Բ�����������  <code>IE6-8������</code><br>###ð������<br>˼�룺��ǰ���ͺ�һ���Ƚϣ�������ǰ�����ں�һ����߽���λ��<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">var ary=[<span class="number">11</span>,<span class="number">9</span>,<span class="number">56</span>,<span class="number">21</span>,<span class="number">7</span>,<span class="number">15</span>,<span class="number">37</span>];</div><div class="line">   <span class="keyword">for</span>(var i=<span class="number">0</span>;i&lt;ary.length<span class="number">-1</span>;i++)&#123;</div><div class="line">       <span class="keyword">for</span>(var j=i+<span class="number">1</span>;j&lt;ary.length;j++)&#123;</div><div class="line">           <span class="keyword">if</span>(ary[j]&lt;ary[i])&#123;</div><div class="line">               var temp;</div><div class="line">               temp=ary[j];</div><div class="line">               ary[j]=ary[i];</div><div class="line">               ary[i]=temp;</div><div class="line">           &#125;</div><div class="line">       &#125;</div><div class="line">   &#125;</div><div class="line">   console.log(ary);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">var ary=[<span class="number">11</span>,<span class="number">9</span>,<span class="number">56</span>,<span class="number">21</span>,<span class="number">7</span>,<span class="number">15</span>,<span class="number">37</span>];</div><div class="line">   <span class="keyword">for</span>(var i=<span class="number">0</span>;i&lt;ary.length<span class="number">-1</span>;i++)&#123;</div><div class="line">       <span class="keyword">for</span>(var j=<span class="number">0</span>;j&lt;ary.length<span class="number">-1</span>-i;j++)&#123;</div><div class="line">           <span class="keyword">if</span>(ary[j+<span class="number">1</span>]&lt;ary[j])&#123;</div><div class="line">               var temp;</div><div class="line">               temp=ary[j+<span class="number">1</span>];</div><div class="line">               ary[j+<span class="number">1</span>]=ary[j];</div><div class="line">               ary[j]=temp;</div><div class="line">           &#125;</div><div class="line">       &#125;</div><div class="line">   &#125;</div><div class="line">   console.log(ary);</div></pre></td></tr></table></figure>
+<p>###����ȥ��<br><strong>˫forѭ��������ȥ��</strong><br>ԭ�����������е�ÿһ���ó����������������бȽϣ��ظ�ɾ�������ظ�������ѭ����һ��<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">//˫<span class="keyword">for</span>ѭ��������ȥ��</div><div class="line"><span class="keyword">for</span>(var i=<span class="number">0</span>;i&lt;ary.length<span class="number">-1</span>;i++)&#123;</div><div class="line">       var cur=ary[i];</div><div class="line">       <span class="keyword">for</span>(var j=i+<span class="number">1</span>;j&lt;ary.length;j++)&#123;</div><div class="line">           <span class="keyword">if</span>(cur==ary[j])&#123;</div><div class="line">               ary.splice(j,<span class="number">1</span>);</div><div class="line">               j--;//ע���������ݵ�����</div><div class="line">           &#125;</div><div class="line">       &#125;</div><div class="line">   &#125;</div><div class="line">   console.log(ary);</div></pre></td></tr></table></figure></p>
+<p><strong>�����������ķ�ʽ</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">//���ô����������ķ�ʽ����ȥ��</div><div class="line">var ary1=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">4</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">1</span>];</div><div class="line">   var ary2=[];</div><div class="line">   <span class="keyword">for</span>(var i=<span class="number">0</span>;i&lt;ary1.length;i++)&#123;</div><div class="line">       <span class="keyword">if</span>(ary2.indexOf(ary1[i])==<span class="number">-1</span>)&#123;</div><div class="line">           ary2.push(ary1[i])</div><div class="line">       &#125;</div><div class="line">   &#125;</div><div class="line">   console.log(ary2);</div></pre></td></tr></table></figure></p>
+<p><strong>���ö���������ȥ��</strong><br>ԭ�������ö����������������ظ���ԭ�����������е�ÿһ�����һ���µ�������������ֵ���������ڴ洢��ʱ���жϵ�ǰ���������Ƿ��Ѿ����ڣ������˾ʹ������������ظ��ˣ�����ֱ��ɾ�����������ظ�������ֱ�Ӵ洢�ͺ���<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">//���ö���������ȥ��</div><div class="line">var ary=[<span class="number">11</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">11</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>];</div><div class="line">   var obj=&#123;&#125;;</div><div class="line">   <span class="keyword">for</span>(var i=<span class="number">0</span>;i&lt;ary.length;i++)&#123;</div><div class="line">       var cur=ary[i];</div><div class="line">       <span class="keyword">if</span>(obj[cur]==cur)&#123;//����Ҳ����д���ж�obj[cur]�Ƿ�����</div><div class="line">           ary.splice(i,<span class="number">1</span>);</div><div class="line">           i--;</div><div class="line">           <span class="keyword">continue</span>;</div><div class="line">       &#125;</div><div class="line">       obj[cur]=cur;</div><div class="line">   &#125;</div><div class="line">   obj=null;</div><div class="line">   console.log(ary);</div></pre></td></tr></table></figure></p>
+<p>###DOM��ȡԪ�صķ�����8����</p>
+<ul>
+<li>document.getElementById(����)<code>������ֻ����document</code>ҳ��������id�ظ��ˣ�ֻ��ȡ��һ��Ԫ�أ���ie6-7�л��ѱ�����name���Ե���id��ʹ�ã�ie6-7������id�Ĵ�Сд</li>
+<li>contenxt.getElementsByTagName(����)</li>
+<li>document.getElementsByName(����) ͨ��Ԫ�ص�name���Ի�ȡԪ�أ�<code>��ie��ֻ�Ա���Ԫ�������ã�Ӧ���ڻ�ȡ����Ԫ��</code></li>
+<li>document.getElementsByClassName(����) <code>IE6-8������</code></li>
+<li>document.documentElement ��ȡHTMLԪ��</li>
+<li>document.body ��ȡbodyԪ��<br>���������������Ļ�ȡ��ǰ��Ļ�Ŀ��ȵĴ���document.documentElement.clientWidth||document.body.clientWidth</li>
+<li>document.querySelector(����) <code>IE6-8�����ݣ��������ƶ���</code></li>
+<li>document.querySelectorAll(����) <code>IE6-8�����ݣ��������ƶ���</code><br>###DOM�еĽڵ��͹�ϵ����<br><strong>�ڵ�</strong><br>һ��ҳ���еı�ǩ�����֡�ע�͡������ǽڵ�</li>
+<li><code>childNodes</code>��ȡ���е��ӽڵ�</li>
+<li><code>children</code>��ȡ���е�Ԫ���ӽڵ㣬��ie8��ע��ʱ������</li>
+<li><code>parentNode</code>��ȡ���׽ڵ�</li>
+<li><code>priviousSibling</code>��ȡ�����ڵ�</li>
+<li><code>nextSibling</code>��ȡ�ܵܽڵ�</li>
+<li><code>firstChild</code>��ȡ���нڵ��еĵ�һ��</li>
+<li><code>lastChild</code>��ȡ���нڵ��е�����һ��</li>
+<li><code>firstElementChild</code>��ȡ���нڵ��еĵ�һ��Ԫ���ӽڵ�<code>IE6-8������</code></li>
+<li><code>lastElementChild</code>��ȡ���нڵ��е�����һ��Ԫ���ӽڵ�<code>IE6-8������</code></li>
+<li><code>priviousElementSibling</code>��ȡԪ�ظ����ڵ�<code>IE6-8������</code></li>
+<li><code>nextElementSibling</code>��ȡԪ�صܵܽڵ�<code>IE6-8������</code><br><strong>js��������Ҫ���յĽڵ�����</strong><br>|�ڵ����� |nodeType |nodeName|nodeValue|<br>| :——–: | :——–:| :–: | :–: |<br>| Ԫ�ؽڵ� | 1 |  ��д�ı�ǩ��  |null|<br>|�ı��ڵ�|3|#text|��������|<br>|ע�ͽڵ�|8|#comment|ע������|<br>|document|9|#document|null|<br>�ڱ�׼�������£����ǰѿո��ͻس��������ı��ڵ㴦��<br>###��ôд������ע��<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">//������ע��</div><div class="line">/*</div><div class="line"> * getMyChildren</div><div class="line"> * @parameter:</div><div class="line"> *      parameter1:����<span class="number">1</span></div><div class="line"> *      parameter2������<span class="number">2</span></div><div class="line"> * @<span class="keyword">return</span>��</div><div class="line"> *      ����ֵ</div><div class="line"> * by guopengsong on <span class="number">2017</span>/<span class="number">02</span>/<span class="number">08</span></div><div class="line"> */</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>###DOM����ɾ��<br><strong>��̬����һ��Ԫ�ر�ǩ</strong><br>document.createElement(“div”)����һ��Ԫ�ر�ǩ����<br>appendChild��Ԫ�����ӵ��ƶ�������ĩβ   parent.appendChild(Ԫ��)<br>insertBefore����Ԫ�����ӵ���Ԫ��֮ǰ,�﷨parent.insertBerfore(newEle,oldEle)<br><strong>ɾ��Ԫ��</strong><br>removeChild:ɾ��Ԫ�أ��﷨��parent.removeChild(ele);<br>cloneNode:��¡Ԫ�أ��﷨��ele.cloneNode(true/false);����������true����Ԫ���������������ﶼ��¡��Ĭ����false��ֻ��¡��ǰԪ�أ�<br><strong>�޸�Ԫ��</strong><br>replaceChild():�滻Ԫ�أ�����Ԫ���滻��Ԫ��,�﷨parent.replaceChild(newEle,oldEle)��</p>
+<p>###setAttribute<br>setAttribute:����Ԫ�ص����ԣ������Զ������ԣ�<br>setAttribute�ʹ��㷽ʽ�����Զ������Ե������ǣ�setAttribute���õ����Կ���������html�ṹ�ϣ��޸���html�ṹ�����������ķ�ʽ���ֲ���������ȡʱ��ֱ�Ӹ���ǩ�������Զ������ԣ�ͨ��”.”��ȡ����������ͨ��getAttribute���Ի�ȡ����<br><code>��setAttribute���õ����ԣ�ֻ����getAttribute��ȡ��Ҳֻ����removeAttribute��ɾ�����ô����ķ�ʽ���õ��Զ������ԣ�ֻ���ô�����[&quot;&quot;]�ķ�ʽ��ȡ</code><br><code>IE6-8��setAttribute��������class���ԣ���ele.className=&#39;xxx&#39;</code><br>��һ����Ŀ��̫���ĵ�������ʱ������Ҫ��̬ȥ���������㣻</p>
+<p>###Math�ķ���</p>
+<ul>
+<li><code>Math.abs()</code>ȡ����ֵ</li>
+<li><code>Math.ceil()</code>����ȡ��������С���������Ͻ�һλ�� ��Math.ceil(-12.3)�Ľ�����-12��</li>
+<li><code>Math.floor()</code>����ȡ��</li>
+<li><code>Math.round()</code>�������룻С����������5��һ���ٽ��㣬�����͸�����һ��</li>
+<li><p><code>Math.random()</code>ȡ[0-1)֮����������������0������1<br>��ȡ[n-m]֮������������(����n,m)</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.round(Math.random()*(m-n)+n)</div></pre></td></tr></table></figure>
+</li>
+<li><p><code>Math.max(val1,val2����)</code>ȡ����ֵ</p>
+</li>
+<li><code>Math.min(val1,val2����)</code>ȡ��Сֵ<br>###�ַ���������Ӧ��<br>�ַ���Ҳ��<code>length</code>���ԣ����Ի�ȡ�ַ����ĳ��ȣ��ַ���Ҳ����������0��ʼ���ո񡢻��з��������ַ������ַ�<br>��һ����ȡ�ƶ��ַ�</li>
+<li><code>chartAt(����)</code>��ȡָ������λ�õ��ַ�</li>
+<li><code>chartCodeAt(����)</code>��ȡָ������λ�õ��ַ�����Ӧ��ASCIIֵ<br>�ڶ����ַ�����ȡ</li>
+<li><code>substr(n,m)</code>������n��ʼ��ȡm���ַ�</li>
+<li><code>substring(n,m)</code>������n��ʼ�ҵ�����m����������m�������ҵ����ַ�����</li>
+<li><code>slice(n,m)</code>������n��ʼ�ҵ�����m����������m�������ҵ����ַ�����<code>֧�ָ�����Ϊ����</code><br><code>��������������ֻд��һ��n����дm��������ȡ��ĩβ</code><br>�����������ַ�������</li>
+<li><code>indexOf(�ַ�)</code>��ȡָ���ַ����ַ����е�һ�γ��ֵ�����������û�з���-1</li>
+<li><code>lastIndexOf(�ַ�)</code>��ȡָ���ַ����ַ����е�����һ�γ��ֵ�����������û�з���-1<br>��������Сдת��</li>
+<li><code>toLowerCase()</code>����ĸת����Сд</li>
+<li><code>toUpperCase()</code>����ĸת���ɴ�д<br>�������滻</li>
+<li><code>replace(���ַ������ַ�)</code>�ڲ�ʹ�������������£�ÿһ�ε�����������ֻ���滻һ�Σ�һ������������<br>�����齫���鰴��ָ���ָ������ֳ�����</li>
+<li><code>split(�ָ���)</code><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var str=<span class="string">"1+2+3+4"</span>;</div><div class="line">console.log(str.split(<span class="string">'+'</span>));//[<span class="string">"1"</span>, <span class="string">"2"</span>, <span class="string">"3"</span>, <span class="string">"4"</span>]</div><div class="line">console.log(str.split(<span class="string">""</span>));//[<span class="string">"1"</span>, <span class="string">"+"</span>, <span class="string">"2"</span>, <span class="string">"+"</span>, <span class="string">"3"</span>, <span class="string">"+"</span>, <span class="string">"4"</span>]</div><div class="line">console.log(str.split());//[<span class="string">"1+2+3+4"</span>]</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>###Date<br>��ȡ�Լ����Ե�ʱ��new Date();���Դ����������磺<br>var time=new Date(“2017-02-11 15:00:00”);���Ƕ��ַ����ĸ�ʽ��Ҫ�����м���”-“�Ĳ��У���<code>IE6-8�²�����</code>��Ҫ�ĳ�”/“<br>��ʱ������ajax��ȡ����������Ӧͷ��<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">var time=new Date();</div><div class="line">var year=time.getFullYear();//��ȡ��</div><div class="line">var month=time.getMonth();//������<span class="number">0</span><span class="number">-11</span>�����֣�����Ҫ+<span class="number">1</span>�����·�</div><div class="line">var day=time.getDate();//��ȡ��</div><div class="line">var week=time.getDay();//��ȡ�ܼ���<span class="number">0</span><span class="number">-6</span>ֱ�ӵ����֣��������յ����������������ǵ�һ��</div><div class="line">var hour=time.getHours();//��ȡСʱ</div><div class="line">var minute=time.getMinutes();//��ȡ����</div><div class="line">var second=time.getSeconds();//��ȡ��</div><div class="line">var milliSeconds=time.getMilliseconds();//��ȡ����</div><div class="line">var newTime=time.getTime();//��ȡ����<span class="number">1970</span>��<span class="number">1</span>��<span class="number">1</span>��<span class="number">0</span>ʱ�ĺ�����</div></pre></td></tr></table></figure></p>
+<p>###��ʱ��ԭ����Ӧ��<br><strong>setInterval(function,time)</strong>��<strong>setTimeout(function,time)</strong>���Ƕ�ʱ����setInterval��ÿ��һ����ʱ��ִ��һ�Σ�setTimeout�ǵ���ָ��ʱ��ִ��һ�Σ�Ȼ����ֹͣ��<br>��ʱ���ķ���ֵ��һ�����֣��������ǵڼ�����ʱ����<br>������ʱ����clearInterval(��ʱ���ķ���ֵ)����clearTimeout(��ʱ���ķ���ֵ);</p>
+<p>###��������������������<br>�ڸտ�ʼ����ҳ����ʱ���������������Դ�һ����js����ִ�еĻ��������ǰ�����������Ϊ��ջ�ڴ桰Ҳ�����������ʼ����ҳ����ʱ������������ȫ�������򣬾���window��<br><code>ջ�ڴ��������洢�����������ͺʹ��ϵ���ִ��js���룬���ڴ��������洢������������������ֵ��</code></p>
+<p>###Ԥ����<br>����ʼ����js����֮ǰ������<code>��ǰ��������</code>��var��function�ؼ��ֵĽ�����ǰ�������Ͷ��壬���ǰ����ֻ��ƽ���<code>Ԥ���ͣ�����������</code>��<br>�ڴ���ִ��֮ǰ����var�ؼ��ֵĽ�����ǰ��������function����ǰ�����Ӷ��壬������ִ�еĹ����У��������������Ƕδ��룬ֱ��������<code>ֻ��������ֵĬ��ֵ��undefined</code><br>Ԥ�����Ƿ�����<code>��ǰ�������µ�</code></p>
+<p>###git��github<br>git�����ã�</p>
+<ul>
+<li>��¼��ʷ���ص���ȥ</li>
+<li>���ն˷���</li>
+<li>�Ŷ�Э��<br><strong>��������</strong><br>win+r������������<br>cd�������ĸ��ļ�<br>cd ..��������һ���ļ���<br>git –version:�鿴git�汾��֪��git��װ�Ƿ��ɹ�<br>cls�����������У�windowsϵͳ�£�<br>clear�����������У�macϵͳ�£�<br>ls -a:�鿴git�ֿ������е��ļ�<br>git remote -v:�鿴��������Զ�ֿ̲�<br>git remote rm �ֿ�����ɾ��Զ�ֿ̲�������</li>
+</ul>
+<p><strong>git�İ�װ</strong><br><code>���鲻Ҫ���İ�װĿ¼��������Ҫ�������û�������</code><br>ע����������ͼѡ������������Ķ�ֱ��ѡ��next<br><img src="./gitConfig.png" alt="Alt text"><br><strong>git����</strong><br>����git�û���������<br>git config –global user.name ������github�û���”<br>git config –global user.email ������github����”<br><code>�������û����������Ļ��޷��ύ</code><br><strong>�����ֿ�</strong><br>�����½�һ���ļ���<br>git init����ʼ�����زֿ���Ϊһ��git���Թ����Ĳֿ�<br>�½�һ��Զ�ֿ̲⣬���زֿ�����Զ�ֿ̲�<br>git remote add <strong><code>origin</code></strong> <a href="https://github.com/guoPengSong/test.git��ɫ�Ӵֵ��������ӵ����ƿ������������֣�һ��ȡ��origin">https://github.com/guoPengSong/test.git��ɫ�Ӵֵ��������ӵ����ƿ������������֣�һ��ȡ��origin</a><br><strong>�ύ����</strong><br>git add -A ���ύ�����زֿ�<br>git commit -m”���ǲ�������”  ������ע��<br>git push origin master ���ύ��Զ�ֿ̲�</p>
+<p>###ѧԱ������ʦ������ַ<br>1�����뵽��ʦ�Ĳֿ⣬Ȼ��fork������ʦ�Ĳֿ⸴��һ�ݵ��Լ��Ĳֿ⣩<br>2��ѧԱ���Լ��Ĳֿ����ص����� git clone ������ַ<br>3��������ʦ�Ĳֿ�git remote add teacher ��ʦ�Ľ�����ַ<br>4��git remote update teacher������ʦ��ͨ��<br>5��git pull teacher master��ȡ��֧</p>
+<p>###�ύ��ҵ<br>��fork��ʦ�Ĳֿ���д���Լ�����ҵ���ύ���Լ�fork��Զ�ֿ̲⣬����new pull request��Ȼ������create pull request��д����������������create pull request���ȴ���ʦ�ĺϲ�ȷ��</p>
+<p>###Ԥ����<br>ʲô��Ԥ���ͣ�<br>�ڵ�ǰ�������£���js����ִ��֮ǰ�����������Դ�var�ʹ�function�ؼ��ֵĽ�����ǰ���������塣<br>���ڴ�var�ؼ��ֵģ���ǰ�������Ѿ��������Ĳ����������������ǻ����¸�ֵ<br>���ڴ�function�ؼ��ֵģ�����+���壨���ȿ���һ���ڴ��ռ䣬�ѷ��������ݵ���<code>�ַ���</code>�洢�������ڴ��ռ䣬Ȼ���Ѵ洢�ռ��ĵ�ַ����������<br><code>����ִ��4�׶Σ�
+1.�γ�˽��������
+2.�βθ�ֵ
+3.Ԥ����
+4.����ִ��</code><br><strong>�ϼ��������������ﶨ���йظ�������ִ���޹�</strong><br><strong>��������</strong><br>�����������õ�ʱ�����γ�һ��˽�������������ǿ�����˽�����������Ƿ���ĳһ������a����ô���������е�a����˽�б�����������û���κι�ϵ������û��˽�б���a����ô���ϼ����������в��ң�����û�м������ϲ��ң�ֱ��window��<br><strong>ջ�ڴ��Ͷ��ڴ�������</strong><br>ջ�ڴ��ṩ��һ����js����ִ�еĻ������������������������ݣ������������͵����ݣ�<br>���ڴ���������������������<br><strong>˽�б������βζ�����˽�б���</strong><br>�����������ȼ�<br>����������&gt;�Ƚ�������&gt;�߼�������&gt;��ֵ������<br><img src="./yunsuanfu.png" alt="�����������ȼ�|center"></p>
+<p><strong>�ڴ漰�ڴ��ͷ�</strong><br>���ڴ����ͷţ���ռ���ڴ���ַ�ı�������null<br>ջ�ڴ����ͷţ�˽�����������ͷţ�һ�������£�����ִ�����ɺ�˽���������ͻ����٣����������������ٺ��������Ķ����������ı�������������ռ�õ�ʱ��������<br>�ڲ��������٣�������ִ�����ɵ�ʱ�򣬻᷵��һ�������Ķ����׶Σ��������صĺ�������Ҫ�ٴε��ã�ֻ�е����еĺ�������������������������������<br><strong>����this���ܽ�</strong></p>
+<ul>
+<li>��Ԫ�����ϵ��¼�������ʱ�򣬻�ִ��һ�������������е�thisָ����ǰ����Ԫ��</li>
+<li>���������õ�ʱ����ǰ���Ƿ��е㣬�����е㣬��ǰ����˭this����˭</li>
+<li>��ִ�к�����this��Զ��window</li>
+<li>���캯���е�this��ʵ��<br><strong>��װ����Ӧ�ÿ��ǵĲ���</strong><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line"> * ������������������ĳһ��Ԫ�ص���һ�������ڵ�</div><div class="line"> * ��������ǰԪ��</div><div class="line"> * ����ֵ����ǰԪ�ص���һ������Ԫ��</div><div class="line"> * ��װ���̣����ȿ��������Ƿ���ԭ������֧���������ܣ���������֧�ֵ�ʱ����ֱ��ʹ���������ķ�������������֧�ֵ�ʱ�����Լ������ݴ���</div><div class="line"> * ����ͨ��window.prev�������������ݵ�ȫ����</div><div class="line"> */</div><div class="line">var oDiv=document.getElementById(<span class="string">"div"</span>);</div><div class="line">(function()&#123;</div><div class="line">    function prev(oDiv)&#123;</div><div class="line">        var pre=oDiv.previousSibling;</div><div class="line">        <span class="keyword">while</span>(pre &amp;&amp; pre.nodeType!==<span class="number">1</span>)&#123;</div><div class="line">            pre=pre.previousSibling;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> pre;</div><div class="line">    &#125;</div><div class="line">    window.prev=prev;</div><div class="line">&#125;)();</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>��ҳ�����õ������ݶ����ַ������ͣ�<br><code>++</code>Ĭ�ϻ�������������ת��<br>���������Զ�������<br><strong>�߼�������</strong><br><code>&amp;&amp;</code>ǰ��Ϊ���Ż��ߺ���<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">//����������д����һ����˼</div><div class="line">var a=<span class="number">2</span>;</div><div class="line"><span class="keyword">if</span>(a)&#123;</div><div class="line">     alert(<span class="number">2</span>);</div><div class="line"> &#125;</div><div class="line"> a &amp;&amp; alert(<span class="number">2</span>);</div></pre></td></tr></table></figure></p>
+<p><code>||</code>ǰ��Ϊ�ٲŻ��ߺ���<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var a=undefined||<span class="number">20</span>;</div><div class="line">alert(a);</div></pre></td></tr></table></figure></p>
+<p><strong>if�����ļ���д��</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">var a=2;</div><div class="line">//��ͨд��</div><div class="line">if(a==2)&#123;</div><div class="line">    alert(2);</div><div class="line">&#125;</div><div class="line">//��&amp;&amp;��д��</div><div class="line">a==2 &amp;&amp; alert(2);</div><div class="line">//if�ļ�д</div><div class="line">if(a==2) alert(2);</div><div class="line">//��Ԫ������</div><div class="line">a==2 ? alert(2):null;</div></pre></td></tr></table></figure></p>
+<p>###��������<br>���������������Ժͷ���<br>��������˼�루oo˼�롢oop˼�룩<br>�����������ص㣺</p>
+<ol>
+<li>��װ����ͬһ�����ܵĺ�����ֻ��װһ�Σ��Ժ��������˹���ֻ��Ҫ���ü���������д�������˴����������룻�����ϣ����ھ�</li>
+<li>�̳У������̳и��������Ժͷ���</li>
+<li>��̬��������̬���������غ���д��jsû���ϸ����������أ��������������صĹ��ܣ����紫�β�ͬ��ʵ�ֹ��ܲ�ͬ����д����������д�����ķ���<br>###����ģʽ<br><strong>����ģʽ</strong><br>����ģʽ��������ͬһ�����������Ժͷ�������ͬһ�������ռ��£�����ȫ�ֱ�������Ⱦ�ͳ�ͻ��<br>����ģʽ�ı��ʾ�����ͨ������<br>����ģʽ�������򵥵�ģ�黯������<br>����ģʽ���ŵ㣺</li>
+</ol>
+<ul>
+<li>����ģʽ���Ա���ȫ�ֱ�������Ⱦ�ͳ�ͻ</li>
+<li>����ģʽ�������򵥵�ģ�黯��������ģ��ֱ�ӵ��໥������this.����������ͬģ�������໥������ģ����.������</li>
+</ul>
+<p>����ģʽ��ȱ�㣺</p>
+<ul>
+<li>��������������һ���������ڴ����������룻������ʩ������ģʽ����װ��</li>
+</ul>
+<p><strong>����ģʽ</strong></p>
+<ul>
+<li>���ȴ���һ���ն���</li>
+<li>�������������Ժͷ���</li>
+<li>�����Ѿ��ӹ����Ķ���</li>
+</ul>
+<p><strong>���캯��ģʽ</strong><br>�������ù���ģʽ�ĵ��÷�ʽ����ϵͳ�ĵ��÷�ʽһ����Ҫ������</p>
+<ol>
+<li>����ĸ��д</li>
+<li>����new����new��֮��ϵͳ�Զ�����һ����������this��</li>
+</ol>
+<p><code>���캯����Сϸ��</code></p>
+<ul>
+<li>���캯���е�this����ʵ��</li>
+<li>���캯���д��ŵĶ���˽�е����Ժͷ���</li>
+<li>ʵ��ֻ�����캯���е�this.xxx�йأ���var�޹�</li>
+<li>���캯���У�ϵͳĬ��Ϊ���Ǵ���һ��ʵ����������һ��ʵ�����Լ�����Ҫ�ֶ����أ������Լ��ֶ����أ����ص���һ�������������͵����ݣ���Ч�����ص���һ�������������͵����ݣ��Ḳ��ϵͳ���ص�ʵ����</li>
+<li>���캯����ʵ�������򽻵�</li>
+<li>��newһ��ʵ����ʱ������������Ҫ���Σ�С���ſ���ʡ��</li>
+</ul>
+<p><code>���캯��ģʽ������ģʽ������</code></p>
+<ul>
+<li>���õ�ʱ��<br>����ģʽ����ͨ�ĵ���<br>���캯��ģʽ��new Person();</li>
+<li>�������ڵĲ�ͬ<br>����ģʽ���������������󣬼ӹ����󣬷��ض���<br>���캯��ģʽ��һ�����ӹ�������ϵͳĬ�ϴ������󣬷��ض���</li>
+</ul>
+<p><strong>���캯��ԭ����ģʽ</strong><br>�ѹ��캯����ÿһ��ʵ�������еķ����͹��е����ԣ����ڹ��캯����prototype�����ϣ��������ɹ��еķ�����<br>ԭ����ģʽ�Ļ���֪ʶ</p>
+<ul>
+<li><code>ÿ�������������ͣ���ͨ���������캯�����϶���һ�����Խ�prototype��prototype�Ǹ�ԭ��</code></li>
+<li><code>prototype�ϴ��Ķ��ǹ��е����Ժͷ������������Դ�һ������constructor��ָ����ǰ�������캯�����ࣩ</code></li>
+<li><code>ÿ�������������ͣ���ͨ������prototype��ʵ�����϶���һ������__proto__,ָ����ǰʵ����������ԭ�ͣ�__proto__��ָ��prototype������</code><br><img src="./prototype.png" alt="ԭ����ͼ|center"></li>
+</ul>
+<p><strong>Object�ϵĹ��з���</strong></p>
+<ul>
+<li>hasOwnProperty:�ж��Ƿ�Ϊ������˽������</li>
+<li>obj1.isPrototypeof(obj2):�ж�obj1�Ƿ���obj2��ԭ������</li>
+<li>propertyIsEnumrable:�Ƿ�Ϊ��ö������</li>
+</ul>
+<p><code>__proto__��ԭ������prototype��ԭ��</code><br>���Ҷ���.���������ȿ�������˽�пռ��Ƿ��У������У���˽�����ԣ�����û��ͨ��<strong>proto</strong>����ǰʵ����������ԭ�����ң��ҵ��˾��ǹ������ԣ��������Ҳ����������ϲ��ң�ֱ���ҵ�Object.prototype�ϣ�������û������undefined��</p>
+<ul>
+<li>��ie��������ֹͨ��<strong>proto</strong>ȥ�޸�ʵ���ϵĹ������Ժͷ�����</li>
+<li>�������������£���ֹ�û������޸�ʵ���ϵĹ������Ժͷ����� �������ǿ���ͨ����.prototype.xxx=function(){}����һ�������޸�,�ڱ�׼�������������ַ�ʽ��ʵ��.<strong>proto</strong>.����������.prototype.������</li>
+</ul>
+<p>��ʽ�������ǹ�ע������һ���������ɹ����ķ���ֵ�����ص���ʲô�͸�ʲô�ķ���<br><code>in</code>���ж�ĳ�������Ƿ��Ƕ����ϵ�˽�����Ի���������<br><strong>����call��apply��bind</strong><br>call��apply��binde��������<br>��call��apply�����ڸ��꺯����thisָ�򣬴����������ú���<code>����ִ��</code><br>���𣺵ڶ���������ͬ��call�ĵڶ���������һ�����Ĵ���apply�ĵڶ��������Ǵ���һ������<br>��bind������Ԥ�������ƣ��Ȱ�bindǰ���ĺ�����this���ˣ��������ˣ�Ȼ�󷵻�һ���޸ĺ��ĺ�������Ҫ��ʱ�����ֶ�ִ�У������ݣ�<br><strong>call�̳�</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">//call�̳еĺ���ԭ�����ǰѸ���˽�е����Ժͷ������̳и�����˽�еģ��ø����������Ĺ��캯����ִ�У�����ͨ��call�ı�this�ؼ��֣�</div><div class="line">	function F()&#123;</div><div class="line">		this.x=<span class="number">100</span>;</div><div class="line">		this.y=<span class="number">200</span>;</div><div class="line">	&#125;</div><div class="line">	F.prototype.getName=function()&#123;</div><div class="line">		</div><div class="line">	&#125;</div><div class="line">	var f=new F;</div><div class="line">	function S()&#123;</div><div class="line">		F.call(this);</div><div class="line">	&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>ð���̳�</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">//ð���̳еĺ���ԭ���ǰѸ���˽�еĺ͹��е����Ժͷ������̳и�����˽�еģ���Ϊֻ��ʵ�����ܼ��ܷ���˽�����ԣ����ܷ��ʹ������ԣ�����ͨ��ʵ����</div><div class="line">	function F()&#123;</div><div class="line">		this.x=<span class="number">100</span>;</div><div class="line">		this.y=<span class="number">200</span>;</div><div class="line">	&#125;</div><div class="line">	F.prototype.getName=function()&#123;</div><div class="line">		</div><div class="line">	&#125;</div><div class="line">	var f=new F;</div><div class="line">	function S()&#123;</div><div class="line">		<span class="keyword">for</span>(var attr <span class="keyword">in</span> f)&#123;</div><div class="line">			this[attr]=f[attr];</div><div class="line">		&#125;</div><div class="line">	&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>ԭ�����̳�</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">//ԭ�����̳еĺ���ԭ���ǰѸ���˽�еĺ͹��е����Ժͷ������̳и����๫�еģ���Ϊֻ��ʵ�����ܼ��ܷ���˽�����ԣ����ܷ��ʹ������ԣ�����ͨ��ʵ������������prototype�Ǹ�����ʵ����</div><div class="line">function F()&#123;</div><div class="line">	this.x=<span class="number">100</span>;</div><div class="line">this.y=<span class="number">200</span>;</div><div class="line">&#125;</div><div class="line">F.prototype.getName=function()&#123;</div><div class="line">	</div><div class="line">&#125;</div><div class="line">function S()&#123;</div><div class="line">	</div><div class="line">&#125;</div><div class="line">S.prototype=new F;</div><div class="line">S.prototype.constructor=S;</div></pre></td></tr></table></figure></p>
+<p><strong>�����̳У����ϼ̳У�</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">//�����̳еĺ���ԭ���ǰѸ���˽�еĺ͹��е����Ժͷ������̳и�����˽�л����еģ�����call�̳�+extend�̳У�</div><div class="line">function extend(obj1,obj2)&#123;</div><div class="line">	<span class="keyword">for</span>(var attr <span class="keyword">in</span> obj1)&#123;</div><div class="line">		obj2[attr]=obj1[attr];</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> obj2;</div><div class="line">&#125;</div><div class="line">function F()&#123;</div><div class="line">	this.x=<span class="number">100</span>;</div><div class="line">	this.y=<span class="number">200</span>;</div><div class="line">&#125;</div><div class="line">F.prototype.getName=function()&#123;</div><div class="line">	</div><div class="line">&#125;</div><div class="line">function S()&#123;</div><div class="line">	F.call(this);</div><div class="line">&#125;</div><div class="line">extend(F.prototype,S.prototype);</div></pre></td></tr></table></figure></p>
+<p><strong>���ϼ̳У�call�̳�+ԭ�����̳У�</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">//���ֻ��ϼ̳������⣬call�̳��Ѿ��Ѹ�����˽�����Լ̳е�������˽�����ԣ�ͨ��ԭ�����̳��ְѸ���˽�еļ̳е��������Ĺ�������</div><div class="line">function F()&#123;</div><div class="line">	this.x=<span class="number">100</span>;</div><div class="line">	this.y=<span class="number">200</span>;</div><div class="line">&#125;</div><div class="line">F.prototype.getName=function()&#123;</div><div class="line"></div><div class="line">&#125;</div><div class="line">function S()&#123;</div><div class="line">	F.call(this);</div><div class="line">&#125;</div><div class="line">S.prototype=new F;</div><div class="line">S.prototype.constructor=S;</div></pre></td></tr></table></figure></p>
+<p><strong>���ϼ̳У�call�̳�+Object.create()��</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">//ͨ��һ���м��������Ѿ��̳еĹ��е�</div><div class="line">function F()&#123;</div><div class="line">this.x=<span class="number">100</span>;</div><div class="line">	this.y=<span class="number">200</span>;</div><div class="line">&#125;</div><div class="line">F.prototype.getName=function()&#123;</div><div class="line"></div><div class="line">&#125;</div><div class="line">function S()&#123;</div><div class="line">	F.call(this);</div><div class="line">&#125;</div><div class="line">function  Temp() &#123;</div><div class="line"></div><div class="line">&#125;</div><div class="line">Temp.prototype=F.prototype;</div><div class="line">S.prototype=new Temp();</div><div class="line">S.prototype.constructor=S;</div></pre></td></tr></table></figure></p>
+<p><strong>���������ֽ�ɫ</strong><br>��ͨ���������캯����������Ҳ������ͨ���������Ժͷ����Ĺ��ܣ�<br>Function.prototype�Ǹ���������������ͨ��prorotype�ĵĹ�����һ���ģ�<br>Object��Function�Ĺ�ϵ��<br>�� Object instanceof Function =&gt;true//���е��඼��Function��ʵ��<br>�� Function instanceof Object =&gt;true//���еĶ�������Object��ʵ��<br>��Object.prototype�� Function.prototype�ĵ�<br>��Object.prototype�� Function.<strong>proto</strong>�ĵ�<br><strong>�������쳣����</strong><br>try catch(e) finally<br>��������try����catch��finally����ִ�У�һ�㲻��<br>������ת�����飺Array.prototype.slice.call(arguments)ת��arguments��ʱ����ȫ���ݣ�ת��nodelist��ʱ��ie6-8������<br><strong>��һ����������Сֵ</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line"> *����������Сֵ</div><div class="line"> */</div><div class="line"> //����</div><div class="line">var ary=[<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>];</div><div class="line">ary.sort(function (a,b) &#123;</div><div class="line">	<span class="keyword">return</span> a-b;</div><div class="line">&#125;);</div><div class="line">//���跨</div><div class="line">function min(ary) &#123;</div><div class="line">	var min=ary[<span class="number">0</span>];</div><div class="line">	<span class="keyword">for</span> (var i=<span class="number">1</span>;i&lt;ary.length;i++)&#123;</div><div class="line">	    <span class="keyword">if</span>(ary[i]&lt;min)&#123;</div><div class="line">	        min=ary[i];</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> min;</div><div class="line">&#125;</div><div class="line">//������ѧ������apply�Ĵ��η�ʽ</div><div class="line">Math.min.apply(Math,ary);</div><div class="line">//����eval</div><div class="line">eval(<span class="string">'Math.min('</span>+ary.join()+<span class="string">')'</span>);</div><div class="line">eval(<span class="string">'Math.min('</span>+ary.toString()+<span class="string">')'</span>)</div></pre></td></tr></table></figure></p>
+<p><strong>�����Զ�������</strong><br>����������ҳ����ʱ��������Ԫ�ص����ԣ�ֻ�����Լ���ʶ�����ԣ��������Զ������ԣ������Զ������Բ���ֱ��д��html�ṹ�У�ֻ�ܺ���ͨ��js����<br><strong>DOMӳ��</strong><br>DOMӳ������html�ṹ����js��ȡ��Ԫ�ؼ��ϴ���ӳ����ϵ�������໥Ӱ�죬һ���ı䣬��һ��Ҳ�ı�<br>a.localeCompare(b);���������Ǻ�������<br>JSON.parse�ǰ�JSON��ʽ���ַ���ת��JSON��ʽ�Ķ�����<br>JSON.stringify()����JSON��ʽ�Ķ���ת��JSON��ʽ���ַ�����<br>eval(‘(‘+json+’)’)����������ôд�������������ţ����������⣬���ڴ���ie7��û��JSON���������⣬</p>
+<p>###����<br>������������������ƥ�䡢�������ַ�����һϵ�й���<br>ƥ�䣺test<br>������exec()�����ķ�����replace()�ַ���������match()�ַ�������<br><code>exec����</code>���������򲶻��ģ�����һ�����飬��û�з����������£���������3���һ���Ƿ��ϵ����������ݣ��ڶ�������������������ԭʼ�ַ����������з��飬�����ӵڶ���������ʼ������������������Զ����index��input��ԭʼ�ַ�����<br><code>match����</code>Ҳ���������򲶻��ģ�����һ�����飬�ڲ���g��������match��execһ�������з�����������matchֻ���õ������򲶻������ݣ����ܲ�������������<br><code>replace����</code>��������������һ���������ַ���/���򣬵ڶ����������ַ���/���������ڶ���������һ��������ʱ�������������Ĳ��������򲶻񵽵����ݣ�ûƥ���ɹ�һ���������������ͻ�����һ�Σ��ú����ķ���ֵ�滻����������ƥ�������ݣ�Ҳ����ƥ������������<br>���򲶻���<code>������</code>��<code>̰����</code><br><code>������</code>��ÿ�ζ���ͷ��ʼֻ����һ���Ϊ������lastIndex��ÿ�ο�ʼ���ҵ�λ�ã����䣬�����취�Ǽ����η�g<br><code>̰����</code>�����򾡿��ܶ���ƥ�䣬�����취��������������Ԫ�ַ�������?��ʾ��̰��ƥ�䣬ÿ��ƥ�����ٵ�<br>����Ԫ�ַ�</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Ԫ�ַ�</th>
+<th style="text-align:center">����</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">\</td>
+<td style="text-align:center">����һ���ַ�����Ϊһ�������ַ�����һ��ԭ���ַ�����һ���������á���һ���˽���ת���������磬’n’ ƥ���ַ� “n”��’\n’ ƥ��һ�����з������� ‘\‘ ƥ�� “\” �� “(“ ��ƥ�� “(“</td>
+</tr>
+<tr>
+<td style="text-align:center">^</td>
+<td style="text-align:center">ƥ�������ַ����Ŀ�ʼλ�á����������� RegExp ������ Multiline ���ԣ�^ Ҳƥ�� ‘\n’ �� ‘\r’ ֮����λ�á�</td>
+</tr>
+<tr>
+<td style="text-align:center">\$</td>
+<td style="text-align:center">ƥ�������ַ����Ľ���λ�á�����������RegExp ������ Multiline ���ԣ�$ Ҳƥ�� ‘\n’ �� ‘\r’ ֮ǰ��λ�á�</td>
+</tr>
+<tr>
+<td style="text-align:center">*</td>
+<td style="text-align:center">ƥ��ǰ�����ӱ���ʽ���λ����Ρ����磬zo<em> ��ƥ�� “z” �Լ� “zoo”�� </em> �ȼ���{0,}</td>
+</tr>
+<tr>
+<td style="text-align:center">+</td>
+<td style="text-align:center">ƥ��ǰ�����ӱ���ʽһ�λ����Ρ����磬’zo+’ ��ƥ�� “zo” �Լ� “zoo”��������ƥ�� “z”��+ �ȼ��� {1,}</td>
+</tr>
+<tr>
+<td style="text-align:center">?</td>
+<td style="text-align:center">ƥ��ǰ�����ӱ���ʽ���λ�һ�Ρ����磬”do(es)?” ����ƥ�� “do” �� “does” �е�”do” ��? �ȼ���{0,1}</td>
+</tr>
+<tr>
+<td style="text-align:center">{n}</td>
+<td style="text-align:center">n ��һ���Ǹ�������ƥ��ȷ���� n �Ρ����磬’o{2}’ ����ƥ�� “Bob” �е� ‘o’��������ƥ�� “food” �е����� o</td>
+</tr>
+<tr>
+<td style="text-align:center">{n,}</td>
+<td style="text-align:center">n ��һ���Ǹ�����������ƥ��n �Ρ����磬’o{2,}’ ����ƥ�� “Bob” �е� ‘o’������ƥ�� “foooood” �е����� o��’o{1,}’ �ȼ��� ‘o+’��’o{0,}’ ���ȼ��� ‘o*’</td>
+</tr>
+<tr>
+<td style="text-align:center">{n,m}</td>
+<td style="text-align:center">m �� n ��Ϊ�Ǹ�����������n &lt;= m������ƥ�� n ��������ƥ�� m �Ρ��磬 “o{1,3}” ��ƥ�� “fooooood”�е�ǰ���� o��’o{0,1}’ �ȼ��� ‘o?’����ע���ڶ��ź�������֮�䲻���пո�</td>
+</tr>
+<tr>
+<td style="text-align:center">?</td>
+<td style="text-align:center">�����ַ��������κ�һ���������Ʒ� (*, +, ?, {n}, {n,}, {n,m}) ����ʱ��ƥ��ģʽ�Ƿ�̰���ġ���̰��ģʽ�������ٵ�ƥ�����������ַ�������Ĭ�ϵ�̰��ģʽ�򾡿��ܶ���ƥ�����������ַ��������磬�����ַ��� “oooo”��’o+?’ ��ƥ�䵥�� “o”���� ‘o+’ ��ƥ������ ‘o’</td>
+</tr>
+<tr>
+<td style="text-align:center">.</td>
+<td style="text-align:center">ƥ���� “\n” ֮�����κε����ַ���</td>
+</tr>
+<tr>
+<td style="text-align:center">(pattern)</td>
+<td style="text-align:center">ƥ��pattern ����ȡ��һƥ�䡣��JScript ����ʹ�� \$1��\$9 ���ԡ�Ҫƥ��Բ�����ַ�����ʹ�� ‘\(‘ ��’\)’</td>
+</tr>
+<tr>
+<td style="text-align:center">(?:pattern)</td>
+<td style="text-align:center">ƥ�� pattern ������ȡƥ��������Ҳ����˵����һ���ǻ�ȡƥ�䣬�����д洢���Ժ�ʹ�á�����ʹ��”��” �ַ� (\</td>
+<td>) ������һ��ģʽ�ĸ��������Ǻ����á����磬 ‘industr(?:y\</td>
+<td>ies) ����һ����’industry\</td>
+<td>industries’ �����Եı���ʽ</td>
+</tr>
+<tr>
+<td style="text-align:center">(?=pattern)</td>
+<td style="text-align:center">����Ԥ�飬���κ�ƥ�� pattern ���ַ�����ʼ��ƥ�������ַ���������һ���ǻ�ȡƥ�䣬Ҳ����˵����ƥ�䲻��Ҫ��ȡ���Ժ�ʹ�á����磬 ‘Windows (?=95\</td>
+<td>98\</td>
+<td>NT\</td>
+<td>2000)’ ��ƥ�� “Windows 2000” �е�”Windows” ��������ƥ�� “Windows 3.1” �е� “Windows”��Ԥ�鲻�����ַ���Ҳ����˵����һ��ƥ�䷢������������һ��ƥ��֮��������ʼ��һ��ƥ���������������ǴӰ���Ԥ�����ַ�֮����ʼ</td>
+</tr>
+<tr>
+<td style="text-align:center">(?!pattern)</td>
+<td style="text-align:center">����Ԥ�飬���κβ�ƥ�����ַ�����ʼ��ƥ�������ַ���������һ���ǻ�ȡƥ�䣬Ҳ����˵����ƥ�䲻��Ҫ��ȡ���Ժ�ʹ�á�����’Windows (?!95\</td>
+<td>98\</td>
+<td>NT\</td>
+<td>2000)’ ��ƥ�� “Windows 3.1” �е� “Windows”��������ƥ�� “Windows 2000” �е� “Windows”��Ԥ�鲻�����ַ���Ҳ����˵����һ��ƥ�䷢������������һ��ƥ��֮��������ʼ��һ��ƥ���������������ǴӰ���Ԥ�����ַ�֮����ʼ</td>
+</tr>
+<tr>
+<td style="text-align:center">x\</td>
+<td style="text-align:center">y</td>
+<td>ƥ�� x �� y�����磬’z\</td>
+<td>food’ ��ƥ�� “z” �� “food”��’(z\</td>
+<td>f)ood’ ��ƥ�� “zood” �� “food”</td>
+</tr>
+<tr>
+<td style="text-align:center">[xyz]</td>
+<td style="text-align:center">�ַ����ϡ�ƥ��������������һ���ַ������磬 ‘[abc]’ ����ƥ�� “plain” �е� ‘a’</td>
+</tr>
+<tr>
+<td style="text-align:center">[^xyz]</td>
+<td style="text-align:center">��ֵ�ַ����ϡ�ƥ��δ�����������ַ������磬 ‘[^abc]’ ����ƥ�� “plain” �е�’p’</td>
+</tr>
+<tr>
+<td style="text-align:center">[a-z]</td>
+<td style="text-align:center">�ַ���Χ��ƥ��ָ����Χ�ڵ������ַ������磬’[a-z]’ ����ƥ�� ‘a’ �� ‘z’ ��Χ�ڵ�����Сд��ĸ�ַ�������:[a-z]   [A-Z]   [0-9]</td>
+</tr>
+<tr>
+<td style="text-align:center">[^a-z]</td>
+<td style="text-align:center">��ֵ�ַ���Χ��ƥ���κβ���ָ����Χ�ڵ������ַ������磬’[^a-z]’ ����ƥ���κβ��� ‘a’ �� ‘z’ ��Χ�ڵ������ַ�</td>
+</tr>
+<tr>
+<td style="text-align:center">\b</td>
+<td style="text-align:center">ƥ��һ�����ʱ߽磬Ҳ����ָ���ʺͿո�����λ�á����磬 ‘er\b’ ����ƥ��”never” �е� ‘er’��������ƥ�� “verb” �е� ‘er’</td>
+</tr>
+<tr>
+<td style="text-align:center">\B</td>
+<td style="text-align:center">ƥ���ǵ��ʱ߽硣’er\B’ ��ƥ�� “verb” �е� ‘er’��������ƥ�� “never” �е� ‘er’</td>
+</tr>
+<tr>
+<td style="text-align:center">\cx</td>
+<td style="text-align:center">ƥ����xָ���Ŀ����ַ������磬 \cM ƥ��һ�� Control-M ���س����� x ��ֵ����Ϊ A-Z �� a-z ֮һ�����򣬽� c ��Ϊһ��ԭ���� ‘c’ �ַ�</td>
+</tr>
+<tr>
+<td style="text-align:center">\d</td>
+<td style="text-align:center">ƥ��һ�������ַ����ȼ��� [0-9]��</td>
+</tr>
+<tr>
+<td style="text-align:center">\D</td>
+<td style="text-align:center">ƥ��һ���������ַ����ȼ��� [^0-9]</td>
+</tr>
+<tr>
+<td style="text-align:center">\f</td>
+<td style="text-align:center">ƥ��һ����ҳ�����ȼ��� \x0c �� \cL</td>
+</tr>
+<tr>
+<td style="text-align:center">\n</td>
+<td style="text-align:center">ƥ��һ�����з����ȼ��� \x0a �� \cJ</td>
+</tr>
+<tr>
+<td style="text-align:center">\r</td>
+<td style="text-align:center">ƥ��һ���س������ȼ��� \x0d �� \cM</td>
+</tr>
+<tr>
+<td style="text-align:center">\s</td>
+<td style="text-align:center">ƥ���κοհ��ַ��������ո����Ʊ�������ҳ���ȵȡ��ȼ��� [ \f\n\r\t\v]</td>
+</tr>
+<tr>
+<td style="text-align:center">\S</td>
+<td style="text-align:center">ƥ���κηǿհ��ַ����ȼ��� [^ \f\n\r\t\v]</td>
+</tr>
+<tr>
+<td style="text-align:center">\t</td>
+<td style="text-align:center">ƥ��һ���Ʊ������ȼ��� \x09 �� \cI</td>
+</tr>
+<tr>
+<td style="text-align:center">\v</td>
+<td style="text-align:center">ƥ��һ����ֱ�Ʊ������ȼ��� \x0b �� \cK</td>
+</tr>
+<tr>
+<td style="text-align:center">\w</td>
+<td style="text-align:center">ƥ���������֡���ĸ���»��ߵ��κε����ַ����ȼ���’[A-Za-z0-9_]’</td>
+</tr>
+<tr>
+<td style="text-align:center">\W</td>
+<td style="text-align:center">ƥ���κηǵ����ַ����ȼ��� ‘[^A-Za-z0-9_]’</td>
+</tr>
+<tr>
+<td style="text-align:center">\xn</td>
+<td style="text-align:center">ƥ�� n������ n Ϊʮ������ת��ֵ��ʮ������ת��ֵ����Ϊȷ�����������ֳ������磬 ‘\x41’ ƥ��”A”��’\x041’ ���ȼ��� ‘\x04’ &amp; “1”����������ʽ�п���ʹ�� ASCII ����</td>
+</tr>
+<tr>
+<td style="text-align:center">\num</td>
+<td style="text-align:center">ƥ�� num������ num ��һ����������������ȡ��ƥ�������á����磬’(.)\1’ ƥ��������������ͬ�ַ�</td>
+</tr>
+<tr>
+<td style="text-align:center">\n</td>
+<td style="text-align:center">��ʶһ���˽���ת��ֵ��һ���������á����� \n ֮ǰ���� n ����ȡ���ӱ���ʽ���� n Ϊ�������á����������� n Ϊ�˽������� (0-7)���� n Ϊһ���˽���ת��ֵ</td>
+</tr>
+<tr>
+<td style="text-align:center">\nm</td>
+<td style="text-align:center">��ʶһ���˽���ת��ֵ��һ���������á����� \nm ֮ǰ������is preceded by at least nm ����ȡ���ӱ���ʽ���� nm Ϊ�������á����� \nm ֮ǰ������ n ����ȡ���� n Ϊһ���������� m �ĺ������á�����ǰ���������������㣬��  n �� m ��Ϊ�˽������� (0-7)���� \nm ��ƥ���˽���ת��ֵ nm</td>
+</tr>
+<tr>
+<td style="text-align:center">\nml</td>
+<td style="text-align:center">���� n Ϊ�˽������� (0-3)���� m �� l ��Ϊ�˽������� (0-7)����ƥ���˽���ת��ֵ nml</td>
+</tr>
+<tr>
+<td style="text-align:center">\un</td>
+<td style="text-align:center">ƥ�� n������ n ��һ�����ĸ�ʮ���������ֱ�ʾ�� Unicode �ַ������磬 \u00A9 ƥ����Ȩ���� (?)</td>
+</tr>
+</tbody>
+</table>
+<p>���η���<br>g��ȫ��ƥ��<br> i �����Դ�Сд<br>m������<br>�����������������޷�ʹ�ñ���������ѡ��ʵ�������ķ�ʽ������ʵ��������Ҫת��<br><code>[]</code>�е�+.û�����⺬�壬����Ҫת��<br><code>[]</code>��û����λ��<br><code>(?:)</code>ƥ�䲻��������������<br>��//������|��ʱ��������()���������������ȼ�<br><strong>��������</strong>   </p>
+<ul>
+<li>�ֻ�������     /^1\d{10}$/</li>
+<li>��Ч��������    /^[+-]?(\d|([1-9]\d+))(.\d+)?$/</li>
+<li>��֤���� 18-65  /^((18|19)|([2-5]\d)|(6[0-5]))$/</li>
+<li>��֤����������   /^([\w.-]+)@([0-9a-zA-Z]+)(.[a-zA-Z]{2,4}){1,2}$/</li>
+<li>��������  /^[\u4e00-\u9fa5]{2,4}$/</li>
+<li>����֤��<br>var reg = /^\d{17}(\d|X)\$/;<br>var reg = /^(\d{2})(\d{4})(\d{4})(\d{2})(\d{2})(\d{2})(\d)(\d|X)$/;</li>
+<li>�ǿ���֤ !/^\s*$/</li>
+<li>ȥ����β�ո� /(^ +)|( +$)/g</li>
+<li>͵С˵ /&lt;[^&lt;&gt;]&gt;/g; ע�⣺textarea ǧ����Ҫͨ��innerHTMLȡֵ����Ϊ���ò�����ֻ��ͨ��value�������ݣ�</li>
+<li>queryURLParameter ��ȡ��ַ���еĲ���<br>var str=’<a href="http://image.baidu.com/search/index?tn=baiduimage&amp;ipn=r&amp;ct=201326592&amp;cl=2&amp;lm=-1&amp;st=-1&amp;fm=result&amp;fr=&amp;sf=1&amp;fmq=1462967508128_R&amp;pv=&amp;ic=0&amp;nc=1&amp;z=&amp;se=1&amp;showtab=0&amp;fb=0&amp;width=&amp;height=&amp;face=0&amp;istype=2&amp;ie=utf-8&amp;word=%E5%88%98%E8%AF%97%E8%AF%97" target="_blank" rel="external">http://image.baidu.com/search/index?tn=baiduimage&amp;ipn=r&amp;ct=201326592&amp;cl=2&amp;lm=-1&amp;st=-1&amp;fm=result&amp;fr=&amp;sf=1&amp;fmq=1462967508128_R&amp;pv=&amp;ic=0&amp;nc=1&amp;z=&amp;se=1&amp;showtab=0&amp;fb=0&amp;width=&amp;height=&amp;face=0&amp;istype=2&amp;ie=utf-8&amp;word=%E5%88%98%E8%AF%97%E8%AF%97</a>‘<br>var reg=/(([^?&amp;=]+)=([^?&amp;=]+))/g;</li>
+</ul>
+<p>�ص��������ص��������ǰѺ�����������������һ������<br>forEach�����ڱ������飬û�з���ֵ����������������һ�������ǻص��������ڶ��������ǿ�ѡ�ģ��Ǹı亯��thisָ���������м����ص������ͱ����ü��Σ��ص�����Ĭ��this��window���ص�����������3����������һ�����������鵱ǰ��ڶ��������ǵ�ǰ����������������������ԭʼ����<code>IE6-8������</code><br>map��Ҳ�����ڱ������飬��forEach�÷�һ��������map�����з���ֵ������ֵ�ǻص������ķ���ֵ�ļ��ϣ�</p>
+<p>###js����ģ��<br><strong>clientϵ��</strong></p>
+<ul>
+<li>clientHeight:  ���ݸ߶Ȳ������߿�  ����+��������   content+padding</li>
+<li>clientWidth��  ����+��������    content+padding</li>
+<li>clientTop: �ϱ߿��Ŀ���</li>
+<li>clientLeft:  ���߿��Ŀ���</li>
+</ul>
+<p><strong>offsetϵ��</strong></p>
+<ul>
+<li>offsetHeight:  clientHeight+���±߿�</li>
+<li>offsetWidth:   clientWidth+���ұ߿� </li>
+<li>offsetLeft:  ���߿�����offsetParent���ڱ߿�����ƫ����,IE8��offsetleft������λ�����ı߿�</li>
+<li>offsetTop:   ���߿�����offsetParent���ڱ߿�����ƫ����</li>
+<li>offsetParent: ������������������Լ��ĸ�Ԫ���ж�λ������ôoffsetParent�����Լ���parentNode�������Լ��ĸ�Ԫ�ؽڵ�û�ж�λ���ԣ���ô��ȥ��Ԫ�صĸ�Ԫ��ȥ���Ҷ�λ���ԣ�������offsetParent��������������û�л��������ϲ��ң�һֱ��body��������û�ж�λ������ôoffsetParent����Ĭ��body��.</li>
+<li><code>ps: offsetLeft��offsetTop��ֵҪȡ����offsetParent��˭
+ps: offsetParent����һ��Ԫ�صĶ�λ��������Ҫ���ģ�ֻ��absolute,relative,fixed�ſ���
+ps: document.body.offsetParent = null
+ps: document.parentNode = null</code></li>
+</ul>
+<p><strong>scrollϵ��</strong></p>
+<ul>
+<li>scrollWidth:  ����û��������ô��clientWidth�����ȵģ�������������ô��Լ���ڣ���������+���ݿ���  padding-left + content</li>
+<li>scrollHeight: ����û��������clientHeight�����ȵģ�������������ô���ǣ�Լ���ڣ�������+���ݸ߶�</li>
+<li>scrollTop: �Ѿ�����ȥ�ĸ߶�  ��ֵ��С����0</li>
+<li>scrollLeft: �Ѿ�����ȥ�Ŀ���</li>
+<li><code>ps: �����к���ģ�͵������У�ֻ��scrollTop��scrollLeft���Ա����¸�ֵ</code></li>
+</ul>
+<p><strong>����js����ģ�͵�С����</strong><br>�������ԣ�ֻ���õ��������޷���ȡС�����������룩��–���������޷�������<br><strong>��������ȡ��������ʽ</strong><br>��׼��������getComputedStyle(oDiv,null).height<br>ie6-8��oDiv.currentStyle.height<br><strong>�����������ļ��ݴ���</strong></p>
+<ul>
+<li>try…catch….</li>
+<li>�����ж�:���ַ���</li>
+</ul>
+<ol>
+<li>attr in obj  <strong>*</strong>����ã�</li>
+<li>obj.attr</li>
+<li>typeof obj.attr === ‘function’</li>
+</ol>
+<ul>
+<li>�������ж�var re=/MSIE (6|7|8)/</li>
+</ul>
+<ol>
+<li>window.navigator.userAgent.match(re)  �õ�[] �ò���null</li>
+<li>window.navigator.userAgent.search(re) �õ������� �ò�����-1</li>
+<li>re.test(window.navigator.userAgent)  �õ���true �ò�����false</li>
+<li>re.exec(window.navigator.userAgent) �õ�[] �ò���null<br><strong>�ж��Ƿ񴫲ε����ַ�ʽ</strong></li>
+</ol>
+<ul>
+<li>�����β�û�и�ֵ�õ�����undefined���ж��β��ǲ���undefined��</li>
+<li>typeof �β�===”undefined”����һ��Ҫ������</li>
+<li>�ж�arguments.length</li>
+<li>���ò�Ҫ��if(�β�)��������0��������</li>
+</ul>
+<p>�ڽṹ������������Ԫ����htmlԪ�أ������Ľڵ���document�ڵ㣬�ڶ�λ����������Ԫ����bodyԪ��</p>
+<p>###�������ݵķ�ʽ</p>
+<ul>
+<li>�ַ���ƴ�ӣ���ã���<code>ת���ַ�\</code>�����������⣩</li>
+<li>Ԫ�ش�����ÿ�β��붼������������</li>
+<li>�ĵ���Ƭ���ȷ����ĵ���Ƭ������ͳһ���룬����Ҫ�ͷ��ĵ���Ƭ��<br>###������Ч���ĺ���<br>����div��ul��li���֣�div�Ŀ�����ul�Ŀ��ȣ��������ȸ���һ��һģһ����li��ԭ����li�ĺ��棬�ı�ul��leftֵ����leftֵС��ul�Ŀ��ȵ�һ����ʱ������ul��leftֵΪ0��<br>###ͼƬ�ӳټ��صĺ���<br>����div��img���֣�div�ı���ͼ��Ĭ��ͼƬ���Ȱ�����Ҫ������ͼƬ����img���Զ��������ϣ������־�ȥ�ĸ߶ȼ���Ļ�ĸ߶ȴ���ͼƬ�����ĵ��ĸ߶ȵ�ʱ�򣬴���һ��imgʵ����������ʵ����src���Ե����Զ������Ե�·������ͼƬ�������ɺ���onload������ͼƬ��src���Ե�����ʵͼƬ·����img��ʵ��Ϊnull������Ҫ�����ظ����أ��ж��Ƿ�loaded����<br>###�ٲ����ĺ���<br>����ul��li���֣�ul���������ж��ĸ�ul�߶���С����ͼƬ�����Ǹ�ulxi<br>###�˶�<br><strong>�˶������ַ�ʽ</strong></li>
+<li>�̶�����</li>
+<li>�̶�ʱ�䣬����ʱ����������</li>
+<li>����Linear��ʾ<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line"> *Linear��ʽ��Ŀ����Ϊ����������λ��</div><div class="line"> *������t:�Ѿ��˶���ʱ�䣻b:�˶���ʼ�㣻c:Ҫ�˶���·�̣�d:�˶�����ʱ�䣻</div><div class="line"> *</div><div class="line"> */</div><div class="line">function(t,b,c,d)&#123;</div><div class="line">	return c/d*t+b</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>�õݹ�����move�����������������еĶ���������ռ�õ�ʱ�򣬻��γ������������ٵ�˽�������򣻽�����ʩ����Ҫ��������������һ��_move������������<br><strong>�ֲ�ͼ����</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">//HTML����</div><div class="line">&lt;div id="box"&gt;</div><div class="line">    &lt;ul&gt;</div><div class="line">        &lt;li&gt;&lt;/li&gt;</div><div class="line">        &lt;li&gt;&lt;/li&gt;</div><div class="line">        &lt;li&gt;&lt;/li&gt;</div><div class="line">    &lt;/ul&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">//css����</div><div class="line">#box&#123;</div><div class="line">    width: 500px;</div><div class="line">    height:300px;</div><div class="line">    overflow: hidden;</div><div class="line">    position: relative;</div><div class="line">&#125;</div><div class="line">ul,li&#123;</div><div class="line">    list-style: none;</div><div class="line">&#125;</div><div class="line">ul&#123;</div><div class="line">    width: 1500px;</div><div class="line">    height: 300px;</div><div class="line">    position: absolute;</div><div class="line">    left: 0;</div><div class="line">    top: 0;</div><div class="line">&#125;</div><div class="line">li&#123;</div><div class="line">    width: 500px;</div><div class="line">    height: 300px;</div><div class="line">    float: left;</div><div class="line">&#125;</div><div class="line">li:nth-child(1)&#123;</div><div class="line">    background: pink;</div><div class="line">&#125;</div><div class="line">li:nth-child(2)&#123;</div><div class="line">    background: yellow;</div><div class="line">&#125;</div><div class="line">li:nth-child(3)&#123;</div><div class="line">    background: red;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>��ͨ������װ�ĳ�����������װ��</strong><br>1��ȫ�ֱ�������˽������–���캯��<br>2��ȫ�ֺ������ɹ��з���–ԭ����<br>3��init��ʵ�ʾ����������к�����˳�����ã�<br>4����ʱע��this�ı仯</p>
+<p>###jQuery<br>ֻҪ��\$Ϊ�������õĶ��ǹ����෽��������\$.ajax();<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$.ajax(&#123;</div><div class="line">    type:'GET',</div><div class="line">    url:'www.baidu.com',</div><div class="line">    dataType:'json'//���ص���������,</div><div class="line">    async:false,//�Ƿ��첽</div><div class="line">    cache:false,//�Ƿ񻺴�</div><div class="line">    data:form.serialize(),//�������л�</div><div class="line">    success:function(val)&#123;//�ɹ�֮�󷵻�����</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<ul>
+<li>form.serialize() �������л�������ǰ������̨���� ## ������װ extend({})</li>
+<li>$.fn.extend({}) ��ԭ�������䷽��–ʵ��ʹ��</li>
+<li>$.extend({}) ���������侲̬������–������ʹ�ã���Ϊ��������˽������</li>
+</ul>
+<p>###jQuery<br>jQuery����ת��ԭ��������\$(“div”).get(0),����\$(“div”)[0];<br>jQuery����Ԫ�أ�\$(“&lt; div&gt;&lt; /div&gt;”);<br>jQuery�Ĳ������䣺$.fn.extend({}) ��ԭ�������䷽��–ʵ��ʹ�ã�\$.extend({}) ���������侲̬������–������ʹ�ã���Ϊ��������˽�����ԣ�<br>form.serialize() �������л�������ǰ������̨����,�ѱ����е�����ƴ�ӣ��м���&amp;������������</p>
+<p>###�¼�<br><strong>�¼���������Щ��</strong></p>
+<ul>
+<li>�����¼���onclick  ondbclick onmouseover onmouseout onmouseenter onmouseleave oncontextmenu …</li>
+<li>ϵͳ�¼���onload onscroll onerror onresize…</li>
+<li>�����¼���onkeydown onkeyup onkeypress…</li>
+<li>�����¼���onfocus onblur …</li>
+</ul>
+<p><strong>DOM0���¼���DOM�����¼���������</strong><br>1��DOM0���¼���Ԫ�����ϵ�˽������ 2��DOM0���¼�������ͬһ��Ԫ�أ�ͬһ����Ϊ�ϰ󶨶�����ͬ�ķ�����ʱ�򣬺����ķ����ᡰ���ǡ�ǰ���ķ�����<br>1��DOM2���¼���Ԫ�����ϵĹ������ԣ�������Ԫ��������eventTarget��������ԭ���ϣ�2��DOM2���¼������Ը�ͬһ��Ԫ�ص�ͬһ����Ϊ�ϰ󶨶�����ͬ�ķ�����<br><strong>�¼����󣺾��������˵�ǰ��������Ϊ����ϸ��Ϣ��</strong></p>
+<ul>
+<li>��׼�������£�ͨ���β�e���õ��¼�����</li>
+<li>IE6-8�µ��¼����󣬸��β�û���κι�ϵ��ͨ��window.event����ȡ<br>���ݴ�����e=e||window.event;</li>
+</ul>
+<p><strong>�����¼���������ϸ��Ϣ��</strong></p>
+<ul>
+<li>clientX/clientY:��ǰ�������ŵ��������������Ͻǵ�����λ�ã�–����</li>
+<li>pageX/pageY:��ǰ�������ŵ�������һ�����Ͻǵ�����λ�ã�–�����ݣ���clientY+scrollTop�������ݣ�</li>
+<li>�¼�Դe.target����ǰ�����¼�������Ԫ��–������<br>���ݴ�����e.target||e.srcElement;</li>
+<li>keyCode:���̵ļ��룻</li>
+<li>��ֹĬ���¼�:e.preventDefault? e.preventDefault(): e.returnValue=false;</li>
+<li>��ֹ�¼�ð�ݣ�e.stopPropagation?e.stopPropagation():e.cancelBubble=true;</li>
+<li>�¼�����<br>1���¼����������׶Σ��ٲ����׶Σ�������� ��ð�ݽ׶Σ��������⣩<br>2���¼����������׶Σ��ٲ����׶� ���¼�Դ e.target ��ð�ݽ׶�<br><code>ע�⣺˳������=���Ȳ�����ð�ݣ�DOM0���¼�ֻ��ð�ݽ׶Σ�������ð��ֻ��һ��</code></li>
+<li>onmouseover��onmouseout���¼�ð�ݵ����⣬��onmouseenter��onmouseleave����</li>
+</ul>
+<p>###�Ŵ���Ч��ԭ��<br>һ��СͼƬ��СͼƬ������һ���ȱ��������ֲ㣬һ�ŵȱ����Ĵ�ͼƬĬ�����ط���ͬСͼƬһ�����ĺ����СͼƬonmouseenter��ʱ���������ֲ��ʹ�ͼƬ��ʾ��onmousemove��ʱ�����ձ���������ͼƬҪ�ƶ��ľ��룬��Ҫע���жϱ߽�ֵ��onmouseleave��ʱ�����ֲ��ʹ�ͼ����</p>
+<p>###��������ǽЧ��ԭ��<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">//���ж������Ǵ��ĸ�����������</div><div class="line">function hoverDir(e)&#123;</div><div class="line">    var x=oDiv.offsetWidth/<span class="number">2</span>+oDiv.offsetLeft- e.clientX;</div><div class="line">    var y=oDiv.offsetHeight/<span class="number">2</span>+oDiv.offsetTop- e.clientY;</div><div class="line">    <span class="keyword">return</span> Math.round((Math.atan2(y,x)*<span class="number">180</span>/Math.PI+<span class="number">180</span>)/<span class="number">90</span>)%<span class="number">4</span>;</div><div class="line">    //<span class="number">1.</span>�󻡶�</div><div class="line">    //<span class="number">2.</span>����ת��</div><div class="line">&#125;</div><div class="line">oDiv.onmouseover=function(e)&#123;</div><div class="line">    e=e||window.event;</div><div class="line">    //����onmouseover��ð������</div><div class="line">    var oTo= e.relatedTarget|| e.fromElement;</div><div class="line">    <span class="keyword">if</span>(this.contains(oTo)) <span class="keyword">return</span>;</div><div class="line">    var con=hoverDir(e);</div><div class="line">    //������������ʱ����������Ѹ�ٵ��Ƶ���ʼλ�ã�Ȼ�����˶����ƶ���<span class="number">0</span>,<span class="number">0</span>λ�ã�</div><div class="line">    switch(con)&#123;</div><div class="line">        case <span class="number">0</span>://right</div><div class="line">            <span class="keyword">break</span>;</div><div class="line">        case <span class="number">1</span>://bottom</div><div class="line">            <span class="keyword">break</span>;</div><div class="line">        case <span class="number">2</span>://left</div><div class="line">            <span class="keyword">break</span>;</div><div class="line">        default://top</div><div class="line">            <span class="keyword">break</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>###………..</p>
+<p>##��¼<br>���Բ��ᱨ���������ᱨ����ԭ�������������������������������������ұ�����ԭ������������<br>toFixed(Ҫ������С��λ��)�����������ı���С����<br>����ֻ����һ��<br>oDiv����һ��Ԫ�أ�aDiv����һ��Ԫ�أ�jQuery����ǰ׺��$</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -103,7 +626,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="https://github.com/guoPengSong/2017/04/16/javascript/" data-title="guopengsong" data-tsina="15076687250" class="share clearfix">
+  <div data-url="https://github.com/guoPengSong/2017/04/16/javascript/" data-title="javascript�ʼ� | guopengsong" data-tsina="15076687250" class="share clearfix">
   </div>
 
 </div>
