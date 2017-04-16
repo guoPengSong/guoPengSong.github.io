@@ -4,16 +4,16 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>����babel | guopengsong</title>
+    <title>关于babel | guopengsong</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="郭鹏松">
     
     <meta name="description" content="##babel
 
-babel�İ�װ
+babel的安装
 
-npm��װ��֮ǰһ��Ҫ���г�ʼ����npm initnpm�ı��ذ�װ�����簲װbabel123npm install babelnpm install babel --save-dev//���в��� --save-dev �ĺ����Ǵ">
+npm安装包之前一定要进行初始化，npm initnpm的本地安装，例如安装babel123npm install babelnpm install babel --save-dev//其中参数 --save-dev 的含义是代表把你的安装包信息写入packag">
     
     
     
@@ -76,7 +76,7 @@ npm��װ��֮ǰһ��Ҫ���г�ʼ����npm initnpm�ı��
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2017/04/16/babel/" title="����babel" itemprop="url">����babel</a>
+      <a href="/2017/04/16/babel/" title="关于babel" itemprop="url">关于babel</a>
   </h1>
   <p class="article-author">By
     
@@ -84,7 +84,7 @@ npm��װ��֮ǰһ��Ҫ���г�ʼ����npm initnpm�ı��
     </p>
   <p class="article-time">
     <time datetime="2017-04-16T11:31:20.686Z" itemprop="datePublished">2017-04-16</time>
-    更新日期:<time datetime="2017-04-16T11:32:23.457Z" itemprop="dateModified">2017-04-16</time>
+    更新日期:<time datetime="2017-04-16T11:34:08.574Z" itemprop="dateModified">2017-04-16</time>
     
   </p>
 </header>
@@ -98,17 +98,17 @@ npm��װ��֮ǰһ��Ҫ���г�ʼ����npm initnpm�ı��
 		
 		<p>##babel</p>
 <ul>
-<li>babel�İ�װ</li>
+<li>babel的安装</li>
 </ul>
-<p>npm��װ��֮ǰһ��Ҫ���г�ʼ����npm init<br>npm�ı��ذ�װ�����簲װbabel<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install babel</div><div class="line">npm install babel --save-dev</div><div class="line">//���в��� --save-dev �ĺ����Ǵ��������İ�װ����Ϣд��package.json�ļ���devDependencies�ֶ��У�����װ��ָ����Ŀ��node_modules�ļ����¡�</div></pre></td></tr></table></figure></p>
+<p>npm安装包之前一定要进行初始化，npm init<br>npm的本地安装，例如安装babel<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install babel</div><div class="line">npm install babel --save-dev</div><div class="line">//其中参数 --save-dev 的含义是代表把你的安装包信息写入package.json文件的devDependencies字段中，包安装在指定项目的node_modules文件夹下。</div></pre></td></tr></table></figure></p>
 <ul>
-<li>babel������ .babelrc<br>Babel�������ļ���.babelrc����������Ŀ�ĸ�Ŀ¼�¡�ʹ��Babel�ĵ�һ�����������������ļ���<br>���ļ���������ת�������Ͳ�����������ʽ���¡�<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;presets&quot;: [],</div><div class="line">  &quot;plugins&quot;: []</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<li>babel的配置 .babelrc<br>Babel的配置文件是.babelrc，存放在项目的根目录下。使用Babel的第一步，就是配置这个文件。<br>该文件用来设置转码规则和插件，基本格式如下。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;presets&quot;: [],</div><div class="line">  &quot;plugins&quot;: []</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>presets�ֶ��趨ת�����򣬹ٷ��ṩ���µĹ��򼯣������Ը�����Ҫ��װ��<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"># ES2015ת������</div><div class="line">$ npm install --save-dev babel-preset-es2015</div><div class="line"></div><div class="line"># reactת������</div><div class="line">$ npm install --save-dev babel-preset-react</div><div class="line"></div><div class="line"># ES7��ͬ�׶��﷨�᰸��ת�����򣨹���4���׶Σ���ѡװһ��</div><div class="line">$ npm install --save-dev babel-preset-stage-0</div><div class="line">$ npm install --save-dev babel-preset-stage-1</div><div class="line">$ npm install --save-dev babel-preset-stage-2</div><div class="line">$ npm install --save-dev babel-preset-stage-3</div></pre></td></tr></table></figure></p>
-<p>Ȼ�󣬽���Щ��������.babelrc��<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;presets&quot;: [</div><div class="line">    &quot;es2015&quot;,</div><div class="line">    &quot;react&quot;,</div><div class="line">    &quot;stage-2&quot;</div><div class="line">  ],</div><div class="line">  &quot;plugins&quot;: []</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>  <code>ע�⣬����Babel���ߺ�ģ����ʹ�ã���������д��.babelrc��</code></p>
-<p>���ǿ��԰�һЩ��������������npm��pakeage.json�ļ���script���������罫һ���������õ�script��build�£���ʱ��ֱ������npm run build </p>
+<p>presets字段设定转码规则，官方提供以下的规则集，你可以根据需要安装。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"># ES2015转码规则</div><div class="line">$ npm install --save-dev babel-preset-es2015</div><div class="line"></div><div class="line"># react转码规则</div><div class="line">$ npm install --save-dev babel-preset-react</div><div class="line"></div><div class="line"># ES7不同阶段语法提案的转码规则（共有4个阶段），选装一个</div><div class="line">$ npm install --save-dev babel-preset-stage-0</div><div class="line">$ npm install --save-dev babel-preset-stage-1</div><div class="line">$ npm install --save-dev babel-preset-stage-2</div><div class="line">$ npm install --save-dev babel-preset-stage-3</div></pre></td></tr></table></figure></p>
+<p>然后，将这些规则加入.babelrc。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;presets&quot;: [</div><div class="line">    &quot;es2015&quot;,</div><div class="line">    &quot;react&quot;,</div><div class="line">    &quot;stage-2&quot;</div><div class="line">  ],</div><div class="line">  &quot;plugins&quot;: []</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>  <code>注意，所有Babel工具和模块的使用，都必须先写好.babelrc。</code></p>
+<p>我们可以把一些常用命令配置在npm的pakeage.json文件的script区域，例如将一个命令配置到script的build下，到时候直接运行npm run build </p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -118,7 +118,7 @@ npm��װ��֮ǰһ��Ҫ���г�ʼ����npm initnpm�ı��
 
 <div class="article-share" id="share">
 
-  <div data-url="https://github.com/guoPengSong/2017/04/16/babel/" data-title="����babel | guopengsong" data-tsina="15076687250" class="share clearfix">
+  <div data-url="https://github.com/guoPengSong/2017/04/16/babel/" data-title="关于babel | guopengsong" data-tsina="15076687250" class="share clearfix">
   </div>
 
 </div>
@@ -128,10 +128,10 @@ npm��װ��֮ǰһ��Ҫ���г�ʼ����npm initnpm�ı��
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2017/04/16/shell/" title="����shell������ʹ��">
+ <a href="/2017/04/16/shell/" title="基本shell命令的使用">
   <strong>PREVIOUS:</strong><br/>
   <span>
-  ����shell������ʹ��</span>
+  基本shell命令的使用</span>
 </a>
 </div>
 

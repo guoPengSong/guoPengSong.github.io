@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>����shell������ʹ�� | guopengsong</title>
+    <title>基本shell命令的使用 | guopengsong</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="郭鹏松">
     
-    <meta name="description" content="����Shell ��ʲô
-���� shell, �����Ľ����� ���� shell �ǽ����û���ϵͳ֮�䣬�����û���ϵͳ���й�ͨ�Ĺ��ߡ���������ģʽ�� shell �⣬GNOME ����ͼ�ν���Ҳ���� shell �ķ��롣��������">
+    <meta name="description" content="介绍Shell 是什么
+关于 shell, 广义的解释是 —— shell 是介于用户与系统之间，帮助用户与系统进行沟通的工具。除了文字模式的 shell 外，GNOME 这类图形界面也属于 shell 的范畴。不过我们通常提到 shell 时都是指狭义的 shell，即文字模式的 shell。
+为">
     
     
     
@@ -73,7 +74,7 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2017/04/16/shell/" title="����shell������ʹ��" itemprop="url">����shell������ʹ��</a>
+      <a href="/2017/04/16/shell/" title="基本shell命令的使用" itemprop="url">基本shell命令的使用</a>
   </h1>
   <p class="article-author">By
     
@@ -81,7 +82,7 @@
     </p>
   <p class="article-time">
     <time datetime="2017-04-16T11:29:25.563Z" itemprop="datePublished">2017-04-16</time>
-    更新日期:<time datetime="2017-04-16T11:30:40.893Z" itemprop="dateModified">2017-04-16</time>
+    更新日期:<time datetime="2017-04-16T11:33:55.850Z" itemprop="dateModified">2017-04-16</time>
     
   </p>
 </header>
@@ -90,68 +91,68 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#����"><span class="toc-number">1.</span> <span class="toc-text">����</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-cd-L¼�л�"><span class="toc-number">2.</span> <span class="toc-text">1.cd Ŀ¼�л�</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-mkdir-�½��l���"><span class="toc-number">3.</span> <span class="toc-text">2.mkdir �½��ļ���</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-touch-�����l�"><span class="toc-number">4.</span> <span class="toc-text">3.touch �����ļ�</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-ls-��ʾ�l�"><span class="toc-number">5.</span> <span class="toc-text">4.ls ��ʾ�ļ�</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-pwd-��ʾ��j·��"><span class="toc-number">6.</span> <span class="toc-text">5.pwd ��ʾ��ǰ·��</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-cat-��ʾ�l�����"><span class="toc-number">7.</span> <span class="toc-text">6.cat ��ʾ�ļ�����</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-rm-ɾ���l���L¼"><span class="toc-number">8.</span> <span class="toc-text">7.rm ɾ���ļ���Ŀ¼</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-cp-�j��ĸ���"><span class="toc-number">9.</span> <span class="toc-text">8.cp �ĵ��ĸ���</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-mv-�z��l�"><span class="toc-number">10.</span> <span class="toc-text">9.mv �ƶ��ļ�</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-grep-����"><span class="toc-number">11.</span> <span class="toc-text">10.grep ����</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-vim-�༭��"><span class="toc-number">12.</span> <span class="toc-text">11.vim �༭��</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#����-1"><span class="toc-number">13.</span> <span class="toc-text">����</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#介绍"><span class="toc-number">1.</span> <span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-cd-目录切换"><span class="toc-number">2.</span> <span class="toc-text">1.cd 目录切换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-mkdir-新建文件夹"><span class="toc-number">3.</span> <span class="toc-text">2.mkdir 新建文件夹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-touch-创建文件"><span class="toc-number">4.</span> <span class="toc-text">3.touch 创建文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-ls-显示文件"><span class="toc-number">5.</span> <span class="toc-text">4.ls 显示文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-pwd-显示当前路径"><span class="toc-number">6.</span> <span class="toc-text">5.pwd 显示当前路径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-cat-显示文件内容"><span class="toc-number">7.</span> <span class="toc-text">6.cat 显示文件内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-rm-删除文件或目录"><span class="toc-number">8.</span> <span class="toc-text">7.rm 删除文件或目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-cp-文档的复制"><span class="toc-number">9.</span> <span class="toc-text">8.cp 文档的复制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-mv-移动文件"><span class="toc-number">10.</span> <span class="toc-text">9.mv 移动文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-grep-搜索"><span class="toc-number">11.</span> <span class="toc-text">10.grep 搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-vim-编辑器"><span class="toc-number">12.</span> <span class="toc-text">11.vim 编辑器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结语"><span class="toc-number">13.</span> <span class="toc-text">结语</span></a></li></ol>
 		</div>
 		
-		<h2 id="����"><a href="#����" class="headerlink" title="����"></a>����</h2><p><strong>Shell ��ʲô</strong></p>
-<p>���� shell, �����Ľ����� ���� shell �ǽ����û���ϵͳ֮�䣬�����û���ϵͳ���й�ͨ�Ĺ��ߡ���������ģʽ�� shell �⣬GNOME ����ͼ�ν���Ҳ���� shell �ķ��롣��������ͨ���ᵽ shell ʱ����ָ������ shell��������ģʽ�� shell��</p>
-<p><strong>ΪʲôҪѧϰ shell</strong></p>
+		<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p><strong>Shell 是什么</strong></p>
+<p>关于 shell, 广义的解释是 —— shell 是介于用户与系统之间，帮助用户与系统进行沟通的工具。除了文字模式的 shell 外，GNOME 这类图形界面也属于 shell 的范畴。不过我们通常提到 shell 时都是指狭义的 shell，即文字模式的 shell。</p>
+<p><strong>为什么要学习 shell</strong></p>
 <ul>
-<li>����ͼ���û�������ǿ�󣬵����Ͼ�Ҳֻ��һ�������׼���shell �Ĺ��ܺ���ִ�е���������ͼ�ν���Ҫ <code>ǿ�ö�</code></li>
-<li>shell ������ģʽ������Զ�̵�¼�ʹ������ٶȱ�ͼ�ν��� <code>����</code></li>
-<li>shell ʹ�� <code>������</code> ����ͼ�ν�����Ҫ�������ര��ִ�������ε�����������ʹ�� shell Ҳ��ֻ��Ҫ�򵥼�����������������</li>
+<li>尽管图形用户界面很强大，但它毕竟也只是一个程序套件，shell 的功能和能执行的任务则比图形界面要 <code>强得多</code></li>
+<li>shell 是文字模式，因此远程登录和传输的速度比图形界面 <code>更快</code></li>
+<li>shell 使用 <code>更方便</code> 。在图形界面需要打开许多窗口执行许多次点击的任务，使用 shell 也许只需要简单几个命令就能完成了</li>
 </ul>
-<p><strong>��������������Shell����</strong></p>
+<p><strong>在哪里可以运行Shell命令</strong></p>
 <ul>
-<li>Linux ��֧�ֵ� shell �������֣�������ֻҪѧϰ��Ӧ�����㷺�� <code>bash shell</code> �����ˡ�����������Ҫ�� Linux ���а涼ʹ�� bash ��ΪĬ�ϵĹ��� shell�����Բ���ʹ������ Linux ���а棬���޿ɱ�����Ҫѧϰ bash��</li>
-<li><code>Windows�û�</code> ��Ҫ������Ӧ�Ŀͻ��˲ſ������У�����Git bash��SecureCRT�ȣ�ϵͳ�Դ���CMD�����ˣ���Ҳ����ʹ��dir�ȼ����򵥵ġ�</li>
-<li>�� Mac ��ͬѧ֮���� Bash �¾Ϳ������С�</li>
+<li>Linux 下支持的 shell 有许多种，但我们只要学习最应用最广泛的 <code>bash shell</code> 就行了。而且现在主要的 Linux 发行版都使用 bash 做为默认的管理 shell。所以不论使用哪种 Linux 发行版，都无可避免地要学习 bash。</li>
+<li><code>Windows用户</code> 需要下载相应的客户端才可以运行，比如Git bash、SecureCRT等，系统自带的CMD就算了，那也就能使用dir等几个简单的。</li>
+<li>有 Mac 的同学之间在 Bash 下就可以运行。</li>
 </ul>
-<h2 id="1-cd-L¼�л�"><a href="#1-cd-L¼�л�" class="headerlink" title="1.cd Ŀ¼�л�"></a>1.cd Ŀ¼�л�</h2><p>ע��Ŀ¼�ָ���Ϊ��/������dos�෴</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># ��ʽ��cd dirname����������Ҫ���뵽d�̵�websiteĿ¼</div><div class="line">$ cd /d/website</div><div class="line"># ����ǰĿ¼����һ��</div><div class="line">$ cd ../</div><div class="line"># ����ǰĿ¼�����ϼ�</div><div class="line">$ cd ../../</div></pre></td></tr></table></figure>
-<h2 id="2-mkdir-�½��l���"><a href="#2-mkdir-�½��l���" class="headerlink" title="2.mkdir �½��ļ���"></a>2.mkdir �½��ļ���</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ mkdir dirname</div><div class="line">$ mkdir website</div></pre></td></tr></table></figure>
-<h2 id="3-touch-�����l�"><a href="#3-touch-�����l�" class="headerlink" title="3.touch �����ļ�"></a>3.touch �����ļ�</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ touch .gitignore</div><div class="line">$ touch a.js b.html c.css</div></pre></td></tr></table></figure>
-<h2 id="4-ls-��ʾ�l�"><a href="#4-ls-��ʾ�l�" class="headerlink" title="4.ls ��ʾ�ļ�"></a>4.ls ��ʾ�ļ�</h2><p>������ʽ��<code>ls [option] file</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"># ��ʾ��ϸ�б�</div><div class="line">$ ls -l</div><div class="line"># ls -l�ļ�д</div><div class="line">$ ll</div><div class="line"># ��ʾ�����ļ������������ļ�����. ��ͷ���ļ�����</div><div class="line">$ ls -a</div><div class="line"># ��ʾ�ļ���������Ŀ¼</div><div class="line">$ ls -R</div><div class="line">$ ��ʾ�ļ�������*����Ŀ¼������/��</div><div class="line">$ ls -F</div><div class="line"># ��lѡ�����ã���ʾĿ¼������������</div><div class="line">$ ls -d</div></pre></td></tr></table></figure>
-<h2 id="5-pwd-��ʾ��j·��"><a href="#5-pwd-��ʾ��j·��" class="headerlink" title="5.pwd ��ʾ��ǰ·��"></a>5.pwd ��ʾ��ǰ·��</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ pwd</div></pre></td></tr></table></figure>
-<h2 id="6-cat-��ʾ�l�����"><a href="#6-cat-��ʾ�l�����" class="headerlink" title="6.cat ��ʾ�ļ�����"></a>6.cat ��ʾ�ļ�����</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># ��ʽ��cat filename</div><div class="line">$ cat a.js</div></pre></td></tr></table></figure>
-<h2 id="7-rm-ɾ���l���L¼"><a href="#7-rm-ɾ���l���L¼" class="headerlink" title="7.rm ɾ���ļ���Ŀ¼"></a>7.rm ɾ���ļ���Ŀ¼</h2><p>������ʽ�� <code>rm [-r] filename (filename ��Ϊ��������������д����.)</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"># ɾ������Ϊ file1 ֮�ĵ�.</div><div class="line">$ rm file1</div><div class="line"># ɾ����������������Ԫ��ǰ�ĸ���ԪΪfile ֮�����ĵ�.</div><div class="line">$ rm file?</div><div class="line"># ɾ�������У��� f Ϊ����֮�����ĵ�.</div><div class="line">$ rm f*</div><div class="line"># ɾ��Ŀ¼ dir1�������������ĵ�����Ŀ¼.</div><div class="line">$ rm -r dir1</div></pre></td></tr></table></figure></p>
-<h2 id="8-cp-�j��ĸ���"><a href="#8-cp-�j��ĸ���" class="headerlink" title="8.cp �ĵ��ĸ���"></a>8.cp �ĵ��ĸ���</h2><p>������ʽ: <code>cp [-r] source destination</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"># ���ĵ� file1 ���Ƴ� file2</div><div class="line">$ cp file1 file2</div><div class="line"># ���ĵ� file1 ���Ƶ�Ŀ¼ dir1 �£��ļ�����Ϊ file1.</div><div class="line">$ cp file1 dir1</div><div class="line"># ��Ŀ¼ /tmp �µ��ĵ� file1���Ƶ�����Ŀ¼�£��ļ�����Ϊ file1.</div><div class="line">$ cp /tmp/file1 .</div><div class="line"># ��Ŀ¼ /tmp �µ��ĵ� file1����Ŀ¼�£�����</div><div class="line">Ϊfile2</div><div class="line">$ cp /tmp/file1 file2</div><div class="line"># (recursive copy) ��������Ŀ¼.</div><div class="line">$ cp -r dir1 dir2</div><div class="line"># ����dir1����Ŀ¼��dir2</div><div class="line">$ cp -R dir1 dir2</div></pre></td></tr></table></figure>
-<h2 id="9-mv-�z��l�"><a href="#9-mv-�z��l�" class="headerlink" title="9.mv �ƶ��ļ�"></a>9.mv �ƶ��ļ�</h2><p>������ʽ�� mv source destination<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># ���ĵ� file1�����ĵ���Ϊ file2.</div><div class="line">$ mv file1 file2</div><div class="line"># ���ĵ� file1���Ƶ�Ŀ¼ dir1 �£�������Ϊ file1.</div><div class="line">$ mv file1 dir1</div><div class="line"># ��Ŀ¼ dir2 �����ڣ�����Ŀ¼ dir1���������е�������Ŀ¼���Ƶ�Ŀ¼ dir2 �£���Ŀ¼����Ϊ dir1.��Ŀ¼dir2 �����ڣ�����dir1�����������ĵ�����Ŀ¼������ΪĿ¼ dir2.</div><div class="line">$ mv dir1 dir2</div></pre></td></tr></table></figure></p>
-<h2 id="10-grep-����"><a href="#10-grep-����" class="headerlink" title="10.grep ����"></a>10.grep ����</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ grep string filename</div><div class="line"># ��a.js�ļ��в���===�ַ�����������ʾ�к�</div><div class="line">$ grep -rn &apos;====&apos; a.js</div></pre></td></tr></table></figure>
-<h2 id="11-vim-�༭��"><a href="#11-vim-�༭��" class="headerlink" title="11.vim �༭��"></a>11.vim �༭��</h2><p>����״̬��</p>
+<h2 id="1-cd-目录切换"><a href="#1-cd-目录切换" class="headerlink" title="1.cd 目录切换"></a>1.cd 目录切换</h2><p>注意目录分隔符为“/”，与dos相反</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># 格式：cd dirname，比如我们要进入到d盘的website目录</div><div class="line">$ cd /d/website</div><div class="line"># 到当前目录的上一级</div><div class="line">$ cd ../</div><div class="line"># 到当前目录的上上级</div><div class="line">$ cd ../../</div></pre></td></tr></table></figure>
+<h2 id="2-mkdir-新建文件夹"><a href="#2-mkdir-新建文件夹" class="headerlink" title="2.mkdir 新建文件夹"></a>2.mkdir 新建文件夹</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ mkdir dirname</div><div class="line">$ mkdir website</div></pre></td></tr></table></figure>
+<h2 id="3-touch-创建文件"><a href="#3-touch-创建文件" class="headerlink" title="3.touch 创建文件"></a>3.touch 创建文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ touch .gitignore</div><div class="line">$ touch a.js b.html c.css</div></pre></td></tr></table></figure>
+<h2 id="4-ls-显示文件"><a href="#4-ls-显示文件" class="headerlink" title="4.ls 显示文件"></a>4.ls 显示文件</h2><p>命令格式：<code>ls [option] file</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"># 显示详细列表</div><div class="line">$ ls -l</div><div class="line"># ls -l的简写</div><div class="line">$ ll</div><div class="line"># 显示所有文件，包含隐藏文件（以. 起头的文件名）</div><div class="line">$ ls -a</div><div class="line"># 显示文件及所有子目录</div><div class="line">$ ls -R</div><div class="line">$ 显示文件（后跟*）和目录（后跟/）</div><div class="line">$ ls -F</div><div class="line"># 与l选项合用，显示目录名而非其内容</div><div class="line">$ ls -d</div></pre></td></tr></table></figure>
+<h2 id="5-pwd-显示当前路径"><a href="#5-pwd-显示当前路径" class="headerlink" title="5.pwd 显示当前路径"></a>5.pwd 显示当前路径</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ pwd</div></pre></td></tr></table></figure>
+<h2 id="6-cat-显示文件内容"><a href="#6-cat-显示文件内容" class="headerlink" title="6.cat 显示文件内容"></a>6.cat 显示文件内容</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># 格式：cat filename</div><div class="line">$ cat a.js</div></pre></td></tr></table></figure>
+<h2 id="7-rm-删除文件或目录"><a href="#7-rm-删除文件或目录" class="headerlink" title="7.rm 删除文件或目录"></a>7.rm 删除文件或目录</h2><p>命令格式： <code>rm [-r] filename (filename 可为档名，或档名缩写符号.)</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"># 删除档名为 file1 之文档.</div><div class="line">$ rm file1</div><div class="line"># 删除档名中有五个字元，前四个字元为file 之所有文档.</div><div class="line">$ rm file?</div><div class="line"># 删除档名中，以 f 为字首之所有文档.</div><div class="line">$ rm f*</div><div class="line"># 删除目录 dir1，及其下所有文档及子目录.</div><div class="line">$ rm -r dir1</div></pre></td></tr></table></figure></p>
+<h2 id="8-cp-文档的复制"><a href="#8-cp-文档的复制" class="headerlink" title="8.cp 文档的复制"></a>8.cp 文档的复制</h2><p>命令格式: <code>cp [-r] source destination</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"># 将文档 file1 复制成 file2</div><div class="line">$ cp file1 file2</div><div class="line"># 将文档 file1 复制到目录 dir1 下，文件名仍为 file1.</div><div class="line">$ cp file1 dir1</div><div class="line"># 将目录 /tmp 下的文档 file1复制到现行目录下，文件名仍为 file1.</div><div class="line">$ cp /tmp/file1 .</div><div class="line"># 将目录 /tmp 下的文档 file1现行目录下，档名</div><div class="line">为file2</div><div class="line">$ cp /tmp/file1 file2</div><div class="line"># (recursive copy) 复制整个目录.</div><div class="line">$ cp -r dir1 dir2</div><div class="line"># 复制dir1整个目录到dir2</div><div class="line">$ cp -R dir1 dir2</div></pre></td></tr></table></figure>
+<h2 id="9-mv-移动文件"><a href="#9-mv-移动文件" class="headerlink" title="9.mv 移动文件"></a>9.mv 移动文件</h2><p>命令格式： mv source destination<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># 将文档 file1，更改档名为 file2.</div><div class="line">$ mv file1 file2</div><div class="line"># 将文档 file1，移到目录 dir1 下，档名仍为 file1.</div><div class="line">$ mv file1 dir1</div><div class="line"># 若目录 dir2 不存在，则将目录 dir1，及其所有档案和子目录，移到目录 dir2 下，新目录名称为 dir1.若目录dir2 不存在，则将dir1，及其所有文档和子目录，更改为目录 dir2.</div><div class="line">$ mv dir1 dir2</div></pre></td></tr></table></figure></p>
+<h2 id="10-grep-搜索"><a href="#10-grep-搜索" class="headerlink" title="10.grep 搜索"></a>10.grep 搜索</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ grep string filename</div><div class="line"># 在a.js文件中查找===字符串，并且显示行号</div><div class="line">$ grep -rn &apos;====&apos; a.js</div></pre></td></tr></table></figure>
+<h2 id="11-vim-编辑器"><a href="#11-vim-编辑器" class="headerlink" title="11.vim 编辑器"></a>11.vim 编辑器</h2><p>命令状态：</p>
 <ul>
-<li>j,k,h,l:��������</li>
-<li>0�� ����</li>
-<li>$: ��β</li>
-<li>i,I :�������i �ڵ�ǰ���괦���� I ���ײ���</li>
-<li>a,A:׷�����a �ڵ�ǰ������׷�ӣ�A ����ĩ׷��</li>
-<li>o,O:�������o �ڵ�ǰ���´���һ�У�O�ڵ�ǰ���ϲ���һ��</li>
-<li>r,R :�滻���r �滻��ǰ���괦�ַ���R�ӹ��괦��ʼ�滻</li>
-<li>����s: �滻ָ�������ַ�</li>
-<li>x: ɾ�����괦�ַ�</li>
-<li>dd: ɾ����ǰ��</li>
-<li>d0: ɾ������ǰ����</li>
-<li>d$: ɾ������������</li>
-<li>ctrl+f :����ҳ</li>
-<li>ctrl+b:ǰ��ҳ</li>
-<li>G : �ļ�β</li>
-<li>����G: ������ָ����</li>
-<li>/string �����ַ���</li>
-<li>n ��������</li>
-<li>N ������������</li>
-<li>% ���Ҷ�Ӧ����</li>
-<li>u ȡ���ϴβ���</li>
-<li>ex����״̬</li>
-<li>��0 �ļ���</li>
-<li>��1,5 copy 7 �鿽��</li>
-<li>��1��5 del ��ɾ��</li>
-<li>��1��5 move 7 ���ƶ�</li>
-<li>��1��$s/string1/string2/g ȫ�ļ�����string1���滻Ϊstring2</li>
-<li>��wq! �����˳�</li>
+<li>j,k,h,l:上下左右</li>
+<li>0： 行首</li>
+<li>$: 行尾</li>
+<li>i,I :插入命令，i 在当前光标处插入 I 行首插入</li>
+<li>a,A:追加命令，a 在当前光标后追加，A 在行末追加</li>
+<li>o,O:打开命令，o 在当前行下打开一行，O在当前行上插入一行</li>
+<li>r,R :替换命令，r 替换当前光标处字符，R从光标处开始替换</li>
+<li>数字s: 替换指定数量字符</li>
+<li>x: 删除光标处字符</li>
+<li>dd: 删除当前行</li>
+<li>d0: 删除光标前半行</li>
+<li>d$: 删除光标后半行</li>
+<li>ctrl+f :后翻页</li>
+<li>ctrl+b:前翻页</li>
+<li>G : 文件尾</li>
+<li>数字G: 数字所指定行</li>
+<li>/string 查找字符串</li>
+<li>n 继续查找</li>
+<li>N 反向继续查找</li>
+<li>% 查找对应括号</li>
+<li>u 取消上次操作</li>
+<li>ex命令状态</li>
+<li>：0 文件首</li>
+<li>：1,5 copy 7 块拷贝</li>
+<li>：1，5 del 块删除</li>
+<li>：1，5 move 7 块移动</li>
+<li>：1，$s/string1/string2/g 全文件查找string1并替换为string2</li>
+<li>：wq! 存盘退出</li>
 </ul>
-<h2 id="����-1"><a href="#����-1" class="headerlink" title="����"></a>����</h2><p>�����������ڳ��õĻ���shell�����������������ʵ�á�ϵͳ����ѧϰ�����������������ϡ�</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>以上内容属于常用的基础shell命令，不完整，但简单实用。系统深入学习请继续查找相关资料。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -161,7 +162,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="https://github.com/guoPengSong/2017/04/16/shell/" data-title="����shell������ʹ�� | guopengsong" data-tsina="15076687250" class="share clearfix">
+  <div data-url="https://github.com/guoPengSong/2017/04/16/shell/" data-title="基本shell命令的使用 | guopengsong" data-tsina="15076687250" class="share clearfix">
   </div>
 
 </div>
@@ -180,9 +181,9 @@
 
 
 <div class="next">
-<a href="/2017/04/16/babel/"  title="����babel">
+<a href="/2017/04/16/babel/"  title="关于babel">
  <strong>NEXT:</strong><br/> 
- <span>����babel
+ <span>关于babel
 </span>
 </a>
 </div>
@@ -197,7 +198,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#����"><span class="toc-number">1.</span> <span class="toc-text">����</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-cd-L¼�л�"><span class="toc-number">2.</span> <span class="toc-text">1.cd Ŀ¼�л�</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-mkdir-�½��l���"><span class="toc-number">3.</span> <span class="toc-text">2.mkdir �½��ļ���</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-touch-�����l�"><span class="toc-number">4.</span> <span class="toc-text">3.touch �����ļ�</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-ls-��ʾ�l�"><span class="toc-number">5.</span> <span class="toc-text">4.ls ��ʾ�ļ�</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-pwd-��ʾ��j·��"><span class="toc-number">6.</span> <span class="toc-text">5.pwd ��ʾ��ǰ·��</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-cat-��ʾ�l�����"><span class="toc-number">7.</span> <span class="toc-text">6.cat ��ʾ�ļ�����</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-rm-ɾ���l���L¼"><span class="toc-number">8.</span> <span class="toc-text">7.rm ɾ���ļ���Ŀ¼</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-cp-�j��ĸ���"><span class="toc-number">9.</span> <span class="toc-text">8.cp �ĵ��ĸ���</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-mv-�z��l�"><span class="toc-number">10.</span> <span class="toc-text">9.mv �ƶ��ļ�</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-grep-����"><span class="toc-number">11.</span> <span class="toc-text">10.grep ����</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-vim-�༭��"><span class="toc-number">12.</span> <span class="toc-text">11.vim �༭��</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#����-1"><span class="toc-number">13.</span> <span class="toc-text">����</span></a></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#介绍"><span class="toc-number">1.</span> <span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-cd-目录切换"><span class="toc-number">2.</span> <span class="toc-text">1.cd 目录切换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-mkdir-新建文件夹"><span class="toc-number">3.</span> <span class="toc-text">2.mkdir 新建文件夹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-touch-创建文件"><span class="toc-number">4.</span> <span class="toc-text">3.touch 创建文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-ls-显示文件"><span class="toc-number">5.</span> <span class="toc-text">4.ls 显示文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-pwd-显示当前路径"><span class="toc-number">6.</span> <span class="toc-text">5.pwd 显示当前路径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-cat-显示文件内容"><span class="toc-number">7.</span> <span class="toc-text">6.cat 显示文件内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-rm-删除文件或目录"><span class="toc-number">8.</span> <span class="toc-text">7.rm 删除文件或目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-cp-文档的复制"><span class="toc-number">9.</span> <span class="toc-text">8.cp 文档的复制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-mv-移动文件"><span class="toc-number">10.</span> <span class="toc-text">9.mv 移动文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-grep-搜索"><span class="toc-number">11.</span> <span class="toc-text">10.grep 搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-vim-编辑器"><span class="toc-number">12.</span> <span class="toc-text">11.vim 编辑器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结语"><span class="toc-number">13.</span> <span class="toc-text">结语</span></a></li></ol>
   </div>
 
 <div id="asidepart">
